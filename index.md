@@ -78,7 +78,7 @@ layout: page
 <div class="image-row">
   <img class="image-in-row" src="{{ "/assets/fluorescence.png" | relative_url }}" alt="lab-show">
   <img class="image-in-row" src="{{ "/assets/index_show1.png" | relative_url }}" alt="lab-show">
-  <img class="image-in-row" src="{{ "/assets/index_show2.png" | relative_url }}" alt="lab-show">
+  <img class="image-in-row" src="{{ "/assets/topic2.png" | relative_url }}" alt="lab-show">
 </div>
 
 
