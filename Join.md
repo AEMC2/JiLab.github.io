@@ -188,7 +188,7 @@ permalink: /join/
 
   <div class="welcome-header">
     <!-- <img width="200" style="margin-right:25px;" src="/assets/Jilab_logo.png"> -->
-    <img width="400" src="/assets/Jilab_logo.gif">
+    <img width="400" src="{{"/assets/Jilab_logo.gif"| relative_url }}">
   </div>
   
   <!-- 语言切换器 -->
