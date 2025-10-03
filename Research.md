@@ -24,7 +24,7 @@ line-height: 1.6;
     padding: 80px 25px;
     text-align: center;
     /* --- 用户修改 ---: 图片路径已更新为本地图片 */
-    background-image: url('/research/background.png');
+    background-image: url("{{ '/research/background.png' | relative_url }}");
     background-size: cover;
     background-position: center;
 }
@@ -202,18 +202,18 @@ We employs the Caenorhabditis elegans (C. elegans), as a model system to deciphe
 <div class="media-grid">
 <div class="media-item">
 <!-- --- 用户修改 ---: 请将这里的图片或GIF文件路径换成您自己的文件 -->
-<img src="/research/C.elegans.png" alt="Navigational behavior visualization">
+<img src="{{"/research/C.elegans.png"| relative_url }}" alt="Navigational behavior visualization">
 <p class="caption">C.elegans</p>
 </div>
 <div class="media-item">
 <!-- --- 用户修改 ---: 请将这里的图片或GIF文件路径换成您自己的文件 -->
-<img src="/research/WBI.gif" alt="Behaivor">
+<img src="{{"/research/WBI.gif"| relative_url }}" alt="Behaivor">
 <p class="caption">Behaivor</p>
 </div>
 
 <div class="media-item">
 <!-- --- 用户修改 ---: 请将这里的图片或GIF文件路径换成您自己的文件 -->
-<img src="/research/WBI-platform.png" alt="C. elegans worm">
+<img src="{{"/research/WBI-platform.png"| relative_url }}" alt="C. elegans worm">
 <p class="caption">Whole-Brain Imaging Platform</p>
 </div>
 
@@ -232,19 +232,19 @@ Analysis of RNNs that can learn one or more motor tasks
 <div class="media-grid">
 <div class="media-item">
 <!-- --- 用户修改 ---: 请将这里的图片或GIF文件路径换成您自己的文件 -->
-<img src="/research/motor.jpg" alt="Interception in Daily Life
+<img src="{{"/research/motor.jpg"| relative_url }}" alt="Interception in Daily Life
 ">
 <p class="caption">Interception in Daily Life</p>
 </div>
 <div class="media-item">
 <!-- --- 用户修改 ---: 请将这里的图片或GIF文件路径换成您自己的文件 -->
-<img src="/research/interception new paradigm .gif" alt="Interception Behaivor">
+<img src="{{"/research/interception new paradigm .gif"| relative_url }}" alt="Interception Behaivor">
 <p class="caption">Interception Behaivor</p>
 </div>
 
 <div class="media-item">
 <!-- --- 用户修改 ---: 请将这里的图片或GIF文件路径换成您自己的文件 -->
-<img src="/research/interception paradigm.gif" alt="Interception Behaivor">
+<img src="{{"/research/interception paradigm.gif"| relative_url }}" alt="Interception Behaivor">
 <p class="caption">Interception Behaivor</p>
 </div>
 
@@ -263,12 +263,12 @@ Humans and animals need to use environmental context to guide their learning and
 <div class="media-grid">
 <div class="media-item">
 <!-- --- 用户修改 ---: 请将这里的图片或GIF文件路径换成您自己的文件 -->
-<img src="/research/Topic 3 .png" alt="How to Choose a Restaurant" style="width: 300px; height: 300px;">
+<img src="{{"/research/Topic 3 .png"| relative_url }}" alt="How to Choose a Restaurant" style="width: 300px; height: 300px;">
 <p class="caption">How to Choose a Restaurant?</p>
 </div>
 <div class="media-item">
 <!-- --- 用户修改 ---: 请将这里的图片或GIF文件路径换成您自己的文件 -->
-<img src="/research/Topic 3-2.png" alt="Possible Behavior" style="width: 500px;">
+<img src="{{"/research/Topic 3-2.png"| relative_url }}" alt="Possible Behavior" style="width: 500px;">
 <p class="caption">Possible Behavior</p>
 </div>
 
