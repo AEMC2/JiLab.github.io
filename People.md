@@ -147,7 +147,7 @@ permalink: /people/
       <div class="person-links">
         <a href="https://scholar.google.com/citations?hl=zh-CN&user=phTqe74AAAAJ" target="_blank">Google Scholar</a>
         <a href="https://www.cibr.ac.cn/science/team/detail/917" target="_blank">Faculty Page</a>
-        <a href="{% link CV/Niji.md %}">C.V.</a>
+        <a href="{{ '/CV/Niji.html' | relative_url }}">C.V.</a>
       </div>
     </div>
   </div>
