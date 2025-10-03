@@ -1,8 +1,8 @@
----
+<!-- ---
 layout: page
 title: Resources
 permalink: /resources/
----
+--- -->
 
 ## For Lab Members
 

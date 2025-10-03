@@ -1,8 +1,8 @@
 # basic options
-title: ZHOU LAB
-author: Jingfeng Zhou
-email: jingfeng.zhou@cibr.ac.cn
-description: Associative Learning & Decision-Making
+title: JI LAB
+author: Ni Ji
+email: niji@cibr.ac.cn
+description: Computational Neuroscience, Navigation Behavior & Decision-Making
 # github username: zhou-neurolab
 
 
@@ -34,3 +34,6 @@ header_pages:
   - Resources.md
   - Fun.md
   - Join.md
+
+url: "https://jilab-cibr.github.io/"  # <-- 换成您自己的域名
+baseurl: ""   

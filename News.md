@@ -2,7 +2,7 @@
 title: News
 layout: home
 list_title: ' '
-permalink: /news/
+permalink: /news
 ---
 
-## [ [Journal Club & Teaching](/news/journal_club_2023.md) ]
+## [ [Journal Club & Research Report](/news/lab_meeting.md) ]

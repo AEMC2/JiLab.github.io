@@ -4,43 +4,88 @@ title: Publications
 permalink: /publications/
 ---
 
-\*First authors<br><sup>#</sup>Corresponding authors
 
-## 2013—2021
+<style>
+.publication-entry {
+margin-bottom: 1.5em;
+padding-left: 1em;
+border-left: 3px solid #007bff;
+transition: all 0.3s ease-in-out;
+}
+.publication-entry:hover {
+border-left: 3px solid #0056b3;
+background-color: #f8f9fa;
+}
+.publication-links a {
+margin-right: 10px;
+font-weight: bold;
+color: #333;
+text-decoration: none;
+}
+.publication-links a:hover {
+color: #007bff;
+text-decoration: underline;
+}
+.journal-link {
+color: #28a745;
+font-weight: bold;
+}
+.journal-link:hover {
+color: #218838;
+}
+</style>
+<!-- *First authors<br><sup>#</sup>Corresponding authors -->
+<br>
+## 2022 — Present
+<div class="publication-entry">
+<p>Chen, J., An, J., Liu, Y., <b>Ji, N.</b> (2025). Brain Bandit: A Biologically Grounded Neural Network for Efficient Control of Exploration. <a href="https://iclr.cc/Conferences/2025" target="_blank" class="journal-link">ICLR 2025</a>.</p>
+<p class="publication-links">[<a href="/papers/2025_Brain_Bandit_A_Biologica.pdf">PDF</a>] [<a href="https://openreview.net/pdf?id=RWJX5F5I9g" target="_blank">LINK</a>]</p>
+</div>  
 
--	Bruch, S<sup>#</sup>., McClure, P., Zhou, J., Schoenbaum G. & Pereira F<sup>#</sup>. (2021). Validating the representational space of deep reinforcement learning models of behavior with neural data, **bioRxiv**, 448556. [[PDF](/papers/2021_bioRxiv_Bruch.pdf)] [[LINK](https://www.biorxiv.org/content/10.1101/2021.06.15.448556v1.full.pdf)]
+## Before 2022
+<div class="publication-entry">
+<p><b>Ji, N.</b>, Madan, G.K., Fabre, G.I., Dayan, A., Baker, C.M., Kramer, T.S., Nwabudike, I, Flavell, S.W. (2021). A neural circuit for flexible control of persistent behavior states. <a href="https://elifesciences.org/" target="_blank" class="journal-link">eLife</a> 2021;10:e62889.</p>
+<p class="publication-links">[<a href="/papers/elife-2021.pdf">PDF</a>] [<a href="https://elifesciences.org/articles/62889">LINK</a>]</p>
+</div>
 
--	Zhou, J<sup>#</sup>., Gardner, M. P., & Schoenbaum, G<sup>#</sup>. (2021). Is the core function of orbitofrontal cortex to signal values or make predictions? **Current Opinion in Behavioral Sciences**, 41, 1-9. [[PDF](/papers/2021_curr_opin_behav_sci.pdf)] [[LINK](https://psyarxiv.com/nzjm9/)]
+<div class="publication-entry">
+<p><b>Ji, N.</b>, Venkatachalam, V., Rodgers, H.D., Lim, M., Kawano, T., Clark, C.M., Alkema, M.J.*, Zhen, M.*, Samuel, A.D.T.* (2021). Corollary discharge promotes a sustained motor state in a neural circuit for navigation. <a href="https://elifesciences.org/" target="_blank" class="journal-link">eLife</a> 2021;10:e68848.</p>
+<p class="publication-links">[<a href="/papers/elife-2021-Corollary discharge promote.pdf">PDF</a>] [<a href="https://elifesciences.org/articles/68848">LINK</a>]</p>
+</div>
 
--	Zhou, J<sup>#</sup>., Zong, W., Jia, C., Gardner, M.P.H., Schoenbaum, G<sup>#</sup>. (2021). Prospective representations in rat orbitofrontal ensembles. **Behavioral Neuroscience**. Accepted. [[PDF](/papers/2021_behav_neurosci.pdf)] [[LINK](https://doi.org/10.1101/2020.08.27.268391)]
+<div class="publication-entry">
+<p><b>Ji, N.</b> and Flavell S.W. (2017) Hydra: Imaging nerve nets in action. <a href="https://www.sciencedirect.com/journal/current-biology" target="_blank" class="journal-link">Current Biology</a> 27(8): R294-295.</p>
+<p class="publication-links">[<a href="/papers/Current Biology-2017.pdf">PDF</a>] [<a href="https://www.sciencedirect.com/science/article/pii/S096098221730338X">LINK</a>]</p>
+</div>
 
--	Zhou, J<sup>#</sup>., Jia, C., Montesinos-Cartagena, M., Gardner, M.P.H., Zong, W., Schoenbaum, G<sup>#</sup>. (2021). Evolving schema representations in orbitofrontal ensembles during learning. **Nature**, 590, 606–611. [[PDF](/papers/2021_nature.pdf)] [[LINK](https://doi.org/10.1038/s41586-020-03061-2)]
+<div class="publication-entry">
+<p>Venkatachalam, V.*, <b>Ji, N.</b>*, Wang, X., Mitchell, J., Klein, M., Tabone, C., Clark, C. M., Greenwood, J.S.F., Chisholm, A., Srinivasan, J., Alkema, M.J., Zhen, M., Samuel, A.D.T. (2016). Pan-neuronal imaging in roaming animals. <a href="https://www.pnas.org/" target="_blank" class="journal-link">PNAS</a> 113(8): E1082-1088.</p>
+<p class="publication-links">[<a href="/papers/PNAS-2016.pdf">PDF</a>] [<a href="https://www.pnas.org/doi/10.1073/pnas.1507109113">LINK</a>]</p>
+</div>
 
--	Gardner, M<sup>#</sup>., Sanchez, D., Conroy, J.S., Wikenheiser, A., Zhou, J., Schoenbaum, G<sup>#</sup>. (2020). Processing in lateral orbitofrontal cortex is required to estimate subjective preference during initial, but not established, economic choice. **Neuron**, 108, 1-12. [[PDF](/papers/2020_gardner_neuron.pdf)] [[LINK](https://www.sciencedirect.com/science/article/abs/pii/S0896627320306413)]
+<div class="publication-entry">
+<p><b>Ji, N.</b>*, Middelkoop, T.C.*, Mentink, R.A., Betist, M.C., Tonegawa, S., Mooijman, D., Korswagen, H.C., van Oudenaarden, A. (2013) Feedback control of gene expression variability in the Caenorhabditis elegans Wnt pathway. <a href="https://www.cell.com/cell/home" target="_blank" class="journal-link">Cell</a> 155(4):869-80.</p>
+<p class="publication-links">[<a href="/papers/Cell-2013.pdf">PDF</a>] [<a href="https://www.cell.com/cell/fulltext/S0092-8674(13)01279-8?_returnURL=https%3A%2F%2Flinkinghub.elsevier.com%2Fretrieve%2Fpii%2FS0092867413012798%3Fshowall%3Dtrue">LINK</a>]</p>
+</div>
 
--	Gardner, M<sup>#</sup>, Conroy, J., Sanchez, D., Zhou, J., Schoenbaum, G<sup>#</sup>. (2019). Real-time value integration during economic choice is regulated by orbitofrontal cortex. **Current Biology**, 29(24), 4315-4322. [[PDF](/papers/2019_gardner_curr_biol.pdf)] [[LINK](https://www.sciencedirect.com/science/article/pii/S0960982219314307)]
+<div class="publication-entry">
+<p>Tan, R.Z., <b>Ji, N.</b>, Mentink, R., Korswagen, H.C., van Oudenaarden, A. (2013) Deconvolving the roles of Wnt ligands and receptors in sensing and amplification. <a href="https://www.embopress.org/journal/17444292" target="_blank" class="journal-link">Molecular Systems Biology</a> 9:631.</p>
+<p class="publication-links">[<a href="/papers/Molecular Systems Biology-2013.pdf">PDF</a>] [<a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC3564265/">LINK</a>]</p>
+</div>
 
--	Zhou, J<sup>#</sup>., Montesinos-Cartagena, M., Wikenheiser, A., Gardner, M., Niv, Y., & Schoenbaum, G<sup>#</sup>. (2019). Complementary task structure representations in hippocampus and orbitofrontal cortex during an odor sequence task. **Current Biology**, 29(20), 3402-3409. [[PDF](/papers/2019_curr_biol_b.pdf)] [[LINK](https://www.sciencedirect.com/science/article/pii/S0960982219310905)]
+<div class="publication-entry">
+<p><b>Ji, N.</b> and van Oudenaarden, A. (2012) Single molecule fluorescent in situ hybridization (smFISH) of C. elegans Worms and Embryos. <a href="https://www.ncbi.nlm.nih.gov/books/NBK19662/" target="_blank" class="journal-link">WormBook</a>, ed. The C. elegans Research Community, WormBook, doi/10.1895/wormbook.1.153.1, http://www.wormbook.org.</p>
+<p class="publication-links">[<a href="https://www.ncbi.nlm.nih.gov/books/NBK126649/">LINK</a>]</p>
+</div>
 
--	Zhou, J<sup>#</sup>., Gardner, M., Stalnaker, T., Ramus, S., Wikenheiser, A., Niv, Y., & Schoenbaum, G<sup>#</sup>. (2019). Rat orbitofrontal ensemble activity contains multiplexed but dissociable representations of value and task structure in an odor sequence task. **Current Biology**, 29(6), 897-907. (*F1000 recommended*) [[PDF](/papers/2019_curr_biol_a.pdf)] [[LINK](https://www.sciencedirect.com/science/article/pii/S0960982219300776)]
+<div class="publication-entry">
+<p>Scott, B.B., Gardner, T., <b>Ji, N.</b>, Fee, M.S. Lois, C. (2012) Wandering neuronal migration in the postnatal vertebrate forebrain. <a href="https://www.jneurosci.org/" target="_blank" class="journal-link">Journal of Neuroscience</a> 32:1436-46.</p>
+<p class="publication-links">[<a href="/papers/Journal of Neuroscience-2012.pdf">PDF</a>] [<a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC6796275/">LINK</a>]</p>
+</div>
 
--	Wang, D., Li, Y., Feng, Q., Guo, Q., Zhou, J., & Luo, M<sup>#</sup>. (2017). Learning shapes the aversion and reward responses of lateral habenula neurons. **eLife**, 6, e23045. [[PDF](/papers/2017_wang_elife.pdf)] [[LINK](https://elifesciences.org/articles/23045)]
-
--	Zhang, J., Tan, L., Ren, Y., Liang, J., Lin, R., Feng, Q., Zhou, J., Hu, F., Ren, J., Wei, C., Yu, T., Zhuang, Y., Bettler, B., Wang, F., & Luo, M<sup>#</sup>. (2016). Presynaptic excitation via GABA B receptors in habenula cholinergic neurons regulates fear memory expression. **Cell**, 166(3), 716-728. [[PDF](/papers/2016_zhang_cell.pdf)] [[LINK](https://www.sciencedirect.com/science/article/pii/S0092867416307942)]
-
--	Li, Y., Zhong, W., Wang, D., Feng, Q., Liu, Z., Zhou, J., Jia, C., Hu, F., Zeng, J., Guo, Q., Fu, L., & Luo, M<sup>#</sup>. (2016). Serotonin neurons in the dorsal raphe nucleus encode reward signals. **Nature Communications**, 7. [[PDF](/papers/2016_li_nat_commun.pdf)] [[LINK](https://www.nature.com/articles/ncomms10503)]
-
--	Guo, Q\*., Zhou, J\*., Feng, Q., Lin, R., Luo Q., Zeng S., Luo, M<sup>#</sup>., & Fu, L<sup>#</sup>. (2015). Multi-channel fiber photometry for population neuronal activity recording. **Biomedical Optics Express**. 6(10), 3919-3931. [[PDF](/papers/2015_guo_boe.pdf)] [[LINK](https://www.osapublishing.org/boe/fulltext.cfm?uri=boe-6-10-3919&id=326666)]
-
--	Luo M<sup>#</sup>., Zhou J., Liu Z. (2015). Reward processing by the dorsal raphe nucleus: 5-HT and beyond. **Learning and Memory**, 22: 452-460. [[PDF](/papers/2015_luo_learn_mem.pdf)] [[LINK](http://learnmem.cshlp.org/content/22/9/452)]
-
--	Zhou, J., Jia, C., Feng, Q., Bao, J., & Luo, M<sup>#</sup>. (2015). Prospective coding of dorsal raphe reward signals by the orbitofrontal cortex. **Journal of Neuroscience**, 35(6), 2717-2730. [[PDF](/papers/2015_jneuro.pdf)] [[LINK](https://www.jneurosci.org/content/35/6/2717)]
-
--	Liu, Z\*., Zhou, J\*., Li, Y., Hu, F., Lu, Y., Ma, M., Feng, Q., Zhang, J., Wang, D., Zeng, J., Bao, J., Kim, J., Chen, Z., Mestikawy, S., & Luo, M<sup>#</sup>. (2014). Dorsal raphe neurons signal reward through 5-HT and glutamate. **Neuron**, 81(6), 1360-1374. (*F1000 recommended*) [[PDF](/papers/2014_liu_neuron.pdf)] [[LINK](https://www.cell.com/neuron/fulltext/S0896-6273(14)00108-1?_returnURL=https%3A%2F%2Flinkinghub.elsevier.com%2Fretrieve%2Fpii%2FS0896627314001081%3Fshowall%3Dtrue)]
-
--	Zhan, C\*<sup>#</sup>., Zhou, J\*., Feng, Q., Zhang, J. E., Lin, S., Bao, J., Wu, P., & Luo, M<sup>#</sup>. (2013). Acute and long-term suppression of feeding behavior by POMC neurons in the brainstem and hypothalamus, respectively. **Journal of Neuroscience**, 33(8), 3624-3632. (*F1000 recommended*) [[PDF](/papers/2013_zhan_jneuro.pdf)] [[LINK](https://www.jneurosci.org/content/33/8/3624)]
-
-<h4 style="color:gray"><br>Copyright Notice</h4> 
+<br>
+<hr>
+<h4 style="color:gray"><br>Copyright Notice</h4>
 <p style="color:gray">
 The documents distributed here have been provided as a means to ensure timely dissemination of scholarly and technical work on a noncommercial basis. Copyright and all rights therein are maintained by the authors or by other copyright holders, notwithstanding that they have offered their works here electronically. It is understood that all persons copying this information will adhere to the terms and constraints invoked by each author’s copyright. These works may not be reposted without the explicit permission of the copyright holder.<br><br>
 Notice borrowed from Dave Plaut/Randy O’Reilly/John Serences/<a href="http://mcdannaldlab.org/home">Mike McDannald</a>

@@ -9,7 +9,7 @@ permalink: /contact/
 邮编：102206
 
 ## 电子邮箱
-周景峰：[jingfeng.zhou@cibr.ac.cn](mailto:jingfeng.zhou@cibr.ac.cn)
+周景峰：[niji@cibr.ac.cn](mailto:nijiu@cibr.ac.cn)
 
 <br>
 
