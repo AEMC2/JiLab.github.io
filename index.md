@@ -72,13 +72,13 @@ layout: page
 </p>
 
 <!-- 第一张大图 -->
-<img class="image-first" src="/assets/lab_pic.jpg" alt="lab-show">
+<img class="image-first" src="{{ "/assets/lab_pic.jpg" | relative_url }}" alt="lab-show">
 
 <!-- 新增的图片行容器 -->
 <div class="image-row">
-  <img class="image-in-row" src="/assets/fluorescence.png" alt="lab-show">
-  <img class="image-in-row" src="/assets/index_show1.png" alt="lab-show">
-  <img class="image-in-row" src="/assets/index_show2.png" alt="lab-show">
+  <img class="image-in-row" src="{{ "/assets/fluorescence.png" | relative_url }}" alt="lab-show">
+  <img class="image-in-row" src="{{ "/assets/index_show1.png" | relative_url }}" alt="lab-show">
+  <img class="image-in-row" src="{{ "/assets/index_show2.png" | relative_url }}" alt="lab-show">
 </div>
 
 
