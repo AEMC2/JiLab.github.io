@@ -139,7 +139,7 @@ permalink: /people/
   <!-- ============================ Principal Investigator ============================ -->
   <h2 class="people-section-title"><i class="fas fa-user-tie"></i>Principal Investigator</h2>
   <div class="person-entry">
-    <img class="person-photo" src="/people/NiJi-PrincipleInvestigator.jpg" />
+    <img class="person-photo" src="{{"/people/NiJi-PrincipleInvestigator.jpg"| relative_url }}" />
     <div class="person-info">
       <h3>Ni Ji (吉妮), Ph.D.</h3>
       <p class="person-title">Principal Investigator</p>
@@ -155,7 +155,7 @@ permalink: /people/
   <!-- ============================ Associate Investigator ============================ -->
   <h2 class="people-section-title"><i class="fas fa-bookmark"></i>Associate Investigator</h2>
   <div class="person-entry">
-    <img class="person-photo" src="/people/jiachang.jpg" />
+    <img class="person-photo" src="{{"/people/jiachang.jpg"| relative_url }}" />
     <div class="person-info">
       <h3>Jiachang Hao (郝家畅), Ph.D.</h3>
       <p class="person-title">Associate Investigator</p>
