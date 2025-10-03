@@ -5,4 +5,4 @@ list_title: ' '
 permalink: /news
 ---
 
-## [ [Journal Club & Research Report](/news/lab_meeting.md) ]
+## [ [Journal Club & Research Report]({{ '/news/lab_meeting.html' | relative_url }}) ]
