@@ -329,6 +329,6 @@ permalink: /people/
 
   <!-- ============================ Lab Alumni ============================ -->
   <h2 class="people-section-title"><i class="fas fa-history"></i>Lab Alumni</h2>
-  <p>Information about our past lab members can be found on the <a href="{% link alumni.md %}">Alumni page</a>.</p>
+  <p>Information about our past lab members can be found on the <a href="{{ '/alumni/' | relative_url }}">Alumni page</a>.</p>
 
 </div>
