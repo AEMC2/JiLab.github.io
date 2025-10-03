@@ -468,14 +468,14 @@ document.addEventListener('DOMContentLoaded', function() {
   decorationsContainer.style.height = `${mainContent.offsetHeight}px`;
   
   const imageUrls = [
-    '/assets/lab_photo1.jpg',
-    '/assets/lab_photo2.jpg',
-    '/assets/lab_photo3.jpeg',
-    '/assets/lab_photo4.jpeg',
-    '/assets/lab_photo5.jpg',
-    '/assets/lab_photo6.jpg',
-    '/assets/lab_photo7.jpeg',
-    '/assets/lab_photo8.jpg'
+    "{{ '/assets/lab_photo1.jpg' | relative_url }}",
+    "{{ '/assets/lab_photo2.jpg' | relative_url }}",
+    "{{ '/assets/lab_photo3.jpeg' | relative_url }}",
+    "{{ '/assets/lab_photo4.jpeg' | relative_url }}",
+    "{{ '/assets/lab_photo5.jpg' | relative_url }}",
+    "{{ '/assets/lab_photo6.jpg' | relative_url }}",
+    "{{ '/assets/lab_photo7.jpeg' | relative_url }}",
+    "{{ '/assets/lab_photo8.jpg' | relative_url }}"
   ];
 
   const imageCount = 8;
