@@ -1,7 +1,7 @@
 ---
 title: Ni Ji, Ph.D.
 layout: page
-permalink: /CV/Niji/
+permalink:/CV/Niji.html
 ---
 
 ## Education
