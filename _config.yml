@@ -35,5 +35,5 @@ header_pages:
   - Fun.md
   - Join.md
 
-url: "https://jilab-cibr.github.io/"  # <-- 换成您自己的域名
-baseurl: ""   
+url: "https://AEMC2.github.io"  # <-- 换成您自己的域名
+baseurl: "/JiLab.github.io"   
