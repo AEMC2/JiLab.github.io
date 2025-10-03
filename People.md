@@ -170,7 +170,7 @@ permalink: /people/
   <!-- ============================ Lab Manager ============================ -->
   <h2 class="people-section-title"><i class="fas fa-list"></i>Lab Manager</h2>
   <div class="person-entry">
-    <img class="person-photo" src="{{"/people/Zhangwendi-LabManager5.pNg"| relative_url }}" />
+    <img class="person-photo" src="{{"/people/Zhangwendi-LabManager5.png"| relative_url }}" />
     <div class="person-info">
       <h3>Wendi Zhang (张文迪), M.S.</h3>
       <p class="person-title">Lab Manager</p>
