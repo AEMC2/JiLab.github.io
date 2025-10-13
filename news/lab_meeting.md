@@ -1,7 +1,7 @@
 ---
 title: Journal Club & Research Report
 layout: page
-permalink: /news/lab_meeting/
+permalink: /news/lab_meeting.html
 ---
 
 

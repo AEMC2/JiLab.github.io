@@ -139,7 +139,7 @@ permalink: /people/
   <!-- ============================ Principal Investigator ============================ -->
   <h2 class="people-section-title"><i class="fas fa-user-tie"></i>Principal Investigator</h2>
   <div class="person-entry">
-    <img class="person-photo" src="/people/NiJi-PrincipleInvestigator.jpg" />
+    <img class="person-photo" src="{{"/people/NiJi-PrincipleInvestigator.jpg"| relative_url }}" />
     <div class="person-info">
       <h3>Ni Ji (吉妮), Ph.D.</h3>
       <p class="person-title">Principal Investigator</p>
@@ -147,7 +147,7 @@ permalink: /people/
       <div class="person-links">
         <a href="https://scholar.google.com/citations?hl=zh-CN&user=phTqe74AAAAJ" target="_blank">Google Scholar</a>
         <a href="https://www.cibr.ac.cn/science/team/detail/917" target="_blank">Faculty Page</a>
-        <a href="{% link CV/Niji.md %}">C.V.</a>
+        <a href="{{ '/CV/Niji.html' | relative_url }}">C.V.</a>
       </div>
     </div>
   </div>
@@ -155,7 +155,7 @@ permalink: /people/
   <!-- ============================ Associate Investigator ============================ -->
   <h2 class="people-section-title"><i class="fas fa-bookmark"></i>Associate Investigator</h2>
   <div class="person-entry">
-    <img class="person-photo" src="/people/jiachang.jpg" />
+    <img class="person-photo" src="{{"/people/jiachang.jpg"| relative_url }}" />
     <div class="person-info">
       <h3>Jiachang Hao (郝家畅), Ph.D.</h3>
       <p class="person-title">Associate Investigator</p>
@@ -170,7 +170,7 @@ permalink: /people/
   <!-- ============================ Lab Manager ============================ -->
   <h2 class="people-section-title"><i class="fas fa-list"></i>Lab Manager</h2>
   <div class="person-entry">
-    <img class="person-photo" src="/people/Zhangwendi-LabManager5.pNg" />
+    <img class="person-photo" src="{{"/people/Zhangwendi-LabManager5.png"| relative_url }}" />
     <div class="person-info">
       <h3>Wendi Zhang (张文迪), M.S.</h3>
       <p class="person-title">Lab Manager</p>
@@ -187,7 +187,7 @@ permalink: /people/
   <!-- 将所有博士生和员工放在一个新的网格容器中 -->
   <div class="people-grid">
     <div class="person-entry">
-      <img class="person-photo" src="/people/Zexi Su-PhDstudent.png" />
+      <img class="person-photo" src="{{"/people/Zexi Su-PhDstudent.png"| relative_url }}" />
       <div class="person-info">
         <h3>Zexi Su (苏则茜), B.S.</h3>
         <p class="person-title">2022-present Ph.D. Student</p>
@@ -197,7 +197,7 @@ permalink: /people/
     </div>
 
     <div class="person-entry">
-      <img class="person-photo" src="/people/QianqianZhang-PhDstudent.jpg" />
+      <img class="person-photo" src="{{"/people/QianqianZhang-PhDstudent.jpg"| relative_url }}" />
       <div class="person-info">
         <h3>Qianqian Zhang (张倩倩), M.S.</h3>
         <p class="person-title">2022-present Ph.D. Student</p>
@@ -207,7 +207,7 @@ permalink: /people/
     </div>
 
     <div class="person-entry">
-      <img class="person-photo" src="/people/Liuyu-PhDstudent.jpg" />
+      <img class="person-photo" src="{{"/people/Liuyu-PhDstudent.jpg"| relative_url }}" />
       <div class="person-info">
           <h3>Yu Liu (刘煜), M.S.</h3>
           <p class="person-title">2023-present Ph.D. Student</p>
@@ -217,7 +217,7 @@ permalink: /people/
     </div>
 
     <div class="person-entry">
-      <img class="person-photo" src="/people/Yating Liu-PhDstudent.jpg" />
+      <img class="person-photo" src="{{"/people/Yating Liu-PhDstudent.jpg"| relative_url }}" />
       <div class="person-info">
           <h3>Yating Liu (刘雅婷), B.S.</h3>
           <p class="person-title">2023-present Ph.D. Student</p>
@@ -227,7 +227,7 @@ permalink: /people/
     </div>
 
     <div class="person-entry">
-      <img class="person-photo" src="/people/Zhanghanyue-PhDstudent.jpg" />
+      <img class="person-photo" src="{{"/people/Zhanghanyue-PhDstudent.jpg"| relative_url }}" />
       <div class="person-info">
           <h3>Hanyue Zhang (张含玥), B.S.</h3>
           <p class="person-title">2023-present Ph.D. Student</p>
@@ -237,7 +237,7 @@ permalink: /people/
     </div>
 
     <div class="person-entry">
-      <img class="person-photo" src="/people/Lisiqi-PhDstudent.png" />
+      <img class="person-photo" src="{{"/people/Lisiqi-PhDstudent.png"| relative_url }}" />
       <div class="person-info">
           <h3>Siqi Li (李思齐), B.S.</h3>
           <p class="person-title">2024-present Ph.D. Student</p>
@@ -247,7 +247,7 @@ permalink: /people/
     </div>
     
     <div class="person-entry">
-      <img class="person-photo" src="/people/Ningsiyu-PhDstudent.jpg" />
+      <img class="person-photo" src="{{"/people/Ningsiyu-PhDstudent.jpg"| relative_url }}" />
       <div class="person-info">
           <h3>Siyu Ning (宁思宇), B.S.</h3>
           <p class="person-title">2024-present Ph.D. Student</p>
@@ -257,7 +257,7 @@ permalink: /people/
     </div>
 
     <div class="person-entry">
-      <img class="person-photo" src="/people/Litianhe-PhDstudent.png" />
+      <img class="person-photo" src="{{"/people/Litianhe-PhDstudent.png"| relative_url }}" />
       <div class="person-info">
           <h3>Tianhe Li (李天赫), M.S.</h3>
           <p class="person-title">2025-present Ph.D. Student</p>
@@ -272,7 +272,7 @@ permalink: /people/
   <h2 class="people-section-title"><i class="fas fa-users"></i>Lab Staff</h2>
   <div class="people-grid">
     <div class="person-entry">
-      <img class="person-photo" src="/people/Wangjunjie-Engineer.png" />
+      <img class="person-photo" src="{{"/people/Wangjunjie-Engineer.png"| relative_url }}" />
       <div class="person-info">
         <h3>Junjie Wang (王俊杰), M.S.</h3>
         <p class="person-title">Deep Learning Engineer</p>
@@ -281,7 +281,7 @@ permalink: /people/
     </div>
 
     <div class="person-entry">
-      <img class="person-photo" src="/people/Chaogao-Engineer.png" />
+      <img class="person-photo" src="{{"/people/Chaogao-Engineer.png"| relative_url }}" />
       <div class="person-info">
         <h3>Chao Gao (高超), M.S.</h3>
         <p class="person-title">Deep Learning Engineer</p>
@@ -290,7 +290,7 @@ permalink: /people/
     </div>
 
     <div class="person-entry">
-      <img class="person-photo" src="/people/fanyu-Reinforcement Learning Engineer.png" />
+      <img class="person-photo" src="{{"/people/fanyu-Reinforcement Learning Engineer.png"| relative_url }}" />
       <div class="person-info">
         <h3>Fanyu Zhu (朱璠宇), M.S.</h3>
         <p class="person-title">Reinforcement Learning Engineer</p>
@@ -299,7 +299,7 @@ permalink: /people/
     </div>
 
     <div class="person-entry">
-      <img class="person-photo" src="/people/Hujiewen-researchasssistant.png" />
+      <img class="person-photo" src="{{"/people/Hujiewen-researchasssistant.png"| relative_url }}" />
       <div class="person-info">
         <h3>Jiewen Hu (胡洁雯), B.S.</h3>
         <p class="person-title">Research Assistant</p>
@@ -308,7 +308,7 @@ permalink: /people/
     </div>
 
      <div class="person-entry">
-      <img class="person-photo" src="/people/Yaoyaqian-researchasssistant.png" />
+      <img class="person-photo" src="{{"/people/Yaoyaqian-researchasssistant.png"| relative_url }}" />
       <div class="person-info">
         <h3>Yaqian Yao (要雅倩), M.S.</h3>
         <p class="person-title">Research Assistant</p>
@@ -317,7 +317,7 @@ permalink: /people/
     </div>
 
     <div class="person-entry">
-      <img class="person-photo" src="/people/JiahuiAn-researchasssistant.png" />
+      <img class="person-photo" src="{{"/people/JiahuiAn-researchasssistant.png"| relative_url }}" />
       <div class="person-info">
         <h3>Jiahui An (安佳晖), M.S.</h3>
         <p class="person-title">Research Assistant</p>
@@ -329,6 +329,6 @@ permalink: /people/
 
   <!-- ============================ Lab Alumni ============================ -->
   <h2 class="people-section-title"><i class="fas fa-history"></i>Lab Alumni</h2>
-  <p>Information about our past lab members can be found on the <a href="{% link alumni.md %}">Alumni page</a>.</p>
+  <p>Information about our past lab members can be found on the <a href="{{ '/alumni/' | relative_url }}">Alumni page</a>.</p>
 
 </div>
