@@ -369,6 +369,38 @@ permalink: /people/
   </div>
 
 
+  <!-- ============================ Interns ============================ -->
+  <h2 class="people-section-title"><i class="fas fa-seedling"></i>Interns</h2>
+  <div class="people-grid">
+    <div class="person-entry">
+      <!-- <img class="person-photo" src="{{"/people/placeholder.jpg"| relative_url }}" /> -->
+      <div class="person-info">
+        <h3>Yilin Wu (吴依琳), B.S.</h3>
+        <p class="person-title">Intern</p>
+        <p>Psychology</p>
+      </div>
+    </div>
+
+    <div class="person-entry">
+      <!-- <img class="person-photo" src="{{"/people/placeholder.jpg"| relative_url }}" /> -->
+      <div class="person-info">
+        <h3>Zixing Jia (贾梓杏), B.S.</h3>
+        <p class="person-title">Intern</p>
+        <p>Physics</p>
+      </div>
+    </div>
+
+    <div class="person-entry">
+      <!-- <img class="person-photo" src="{{"/people/placeholder.jpg"| relative_url }}" /> -->
+      <div class="person-info">
+        <h3>Linghao Ren (任凌颢), B.S.</h3>
+        <p class="person-title">Intern</p>
+        <p>Information and Computing Science</p>
+      </div>
+    </div>
+  </div>
+
+
   <!-- ============================ Lab Alumni ============================ -->
   <h2 class="people-section-title"><i class="fas fa-history"></i>Lab Alumni</h2>
   <p>Information about our past lab members can be found on the <a href="{{ '/alumni/' | relative_url }}">Alumni page</a>.</p>
