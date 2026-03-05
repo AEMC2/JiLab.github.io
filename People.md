@@ -281,11 +281,11 @@ permalink: /people/
     </div>
 
     <div class="person-entry">
-      <img class="person-photo" src="{{"/people/Chaogao-Engineer.png"| relative_url }}" />
+      <img class="person-photo" src="{{"/people/Wangdegang-Engineer.jpg"| relative_url }}" />
       <div class="person-info">
-        <h3>Chao Gao (高超), M.S.</h3>
+        <h3>Degang Wang (王德港), M.S.</h3>
         <p class="person-title">Deep Learning Engineer</p>
-        <p><a href="mailto:gaochao@cibr.ac.cn">gaochao@cibr.ac.cn</a></p>
+        <p><a href="mailto:wangdegang@cibr.ac.cn">wangdegang@cibr.ac.cn</a></p>
       </div>
     </div>
 

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>JI LAB | Computational Neuroscience, Navigation Behavior &amp; Decision-Making</title>
+<meta name="generator" content="Jekyll v3.10.0" />
+<meta property="og:title" content="JI LAB" />
+<meta name="author" content="Ni Ji" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Computational Neuroscience, Navigation Behavior &amp; Decision-Making" />
+<meta property="og:description" content="Computational Neuroscience, Navigation Behavior &amp; Decision-Making" />
+<link rel="canonical" href="http://localhost:4000/" />
+<meta property="og:url" content="http://localhost:4000/" />
+<meta property="og:site_name" content="JI LAB" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="JI LAB" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebSite","author":{"@type":"Person","name":"Ni Ji"},"description":"Computational Neuroscience, Navigation Behavior &amp; Decision-Making","headline":"JI LAB","name":"JI LAB","url":"http://localhost:4000/"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="JI LAB" /></head>
+<body><header class="site-header">
+<style>
+    /* // --- 调整导航栏字体大小 (您已添加) --- */
+.site-nav .page-link {
+  font-size: 24px; 
+}
+
+
+/* // --- 新增代码：调整 Header 高度和标题字体 --- */
+
+/* // 1. 调整 Header 的整体高度 */
+.site-header {
+  min-height: 50px; 
+  /* // <-- 增加这个数值来提高 Header 的整体最小高度 */
+  padding-top: 25px;    
+  /* // 增加上下内边距，让内容垂直居中 */
+  padding-bottom: 10px;
+}
+
+/* <!- 2. 调整 Logo 旁边的网站标题 "JI LAB" 的字体大小 */
+.site-title {
+  font-size: 25px; 
+    font-weight: bold;
+}
+</style>
+  <div class="wrapper"><!-- =================================================================== -->
+    <!-- 这是您需要修改的部分：将默认的网站标题链接替换为 Logo + 文字 -->
+    <!-- =================================================================== -->
+    <a class="site-title" rel="author" href="/">
+        <!-- 请确保您的 logo 图片放在 /assets/logo.png -->
+        <img src="/assets/Jilab_logo.png" alt="Logo" style="height: 70px; vertical-align: middle; margin-right: 8px;">
+        <span>JI LAB</span>
+    </a>
+    <!-- ====================== 修改结束 ============================ --><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/people/">People</a><a class="page-link" href="/research/">Research</a><a class="page-link" href="/publications/">Publications</a><a class="page-link" href="/news/">News</a><a class="page-link" href="/join/">Join Us</a></div>
+      </nav></div>
+
+</header><main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title"></h1>
+  </header>
+
+  <div class="post-content">
+    <style>
+  /* 减少页面两侧空白 */
+  .wrapper {
+    max-width: 1100px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  /* 第一张大图的样式 */
+  .image-first {
+    width: 800px;
+    margin: 0 auto 30px;
+    display: block;
+    border-radius: 8px;
+  }
+
+  /* --- 新增：用于排列一行图片的 Flexbox 容器 --- */
+  .image-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 30px;
+  }
+
+  /* --- 新增：行内图片的样式 --- */
+  .image-in-row {
+    width: 300px;
+    height: auto;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out; 
+  }
+
+  /* --- 新增：让中间的图片向上突出显示 --- */
+  .image-row .image-in-row:nth-child(2) {
+    transform: translateX(22px) scale(1.05); /* 向上移动20px并放大5% */
+    /* box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); 添加阴影增加立体感 */
+    /* z-index: 1; 确保它叠在其他图片之上 */
+  }
+
+  /* --- 新增：鼠标悬停在整行上时，让未悬停的图片变暗、缩小 --- */
+  /* .image-row:hover .image-in-row:not(:hover) {
+    opacity: 0.8;
+    transform: scale(0.98);
+  } */
+
+  /* 第一段文字样式 */
+  .text-first {
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  /* 第二段文字样式 */
+  .text-second {
+    font-size: 18px;
+    line-height: 1.6;
+  }
+
+
+
+
+</style>
+
+<p class="text-first">
+  <font size="6">Welcome to <strong>Ji Lab</strong> at the <a href="http://cibr.ac.cn/#/">Chinese Institute for Brain Research (CIBR), Beijing</a>.</font>
+</p>
+
+<!-- 第一张大图 -->
+<p><img class="image-first" src="/assets/lab_pic.jpg" alt="lab-show" /></p>
+
+<!-- 新增的图片行容器 -->
+<div class="image-row">
+  <img class="image-in-row" src="/assets/fluorescence.png" alt="lab-show" />
+  <img class="image-in-row" src="/assets/index_show1.png" alt="lab-show" />
+  <img class="image-in-row" src="/assets/topic2.png" alt="lab-show" />
+</div>
+
+<!-- 第二段文字 -->
+<p class="text-second">
+  <font size="6">Our research focuses on the <strong>computational neural mechanisms of perception, decision-making, and learning in animal navigation behavior.</strong>  <br />On this website, you can get to know <a href="/people/">who we are</a> and <a href="/research/">what we do</a>, check out the <a href="/publications/">publications</a> and <a href="/news/">news</a> for the latest updates 
+  <!--or explore useful <a href="/Resources.html">resources</a>, <a href="/Fun.html">fun stuff</a>, -->and possible <a href="/join/">positions</a> in the lab.</font>
+</p>
+
+<!-- The navigation ability of organisms is crucial to their survival needs such as foraging, finding mates, harm avoidance and shelter hunting. Through evolution and natural selection, many species (from bacteria to mammals) have gained the powerful ability to effectively navigate through complex and uncertain natural environments. Previous studies have found that the navigation behavior of different species often points to similar principles at the algorithmic level (e. g., the movement of bacteria and nematodes in heterogeneous environments can be explained by the random walk model). At the same time, different species also develop perceptual and decision-making mechanisms specific to their own environment through evolution or acquired learning. Understanding the navigation algorithm of organisms and its neural control mechanism, on the one hand, can reveal the neural principle of biological brain control navigation behavior, on the other hand, can provide a new idea for the development of artificial intelligence navigation control system. -->
+
+  </div>
+
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+
+      <div class="footer-col footer-col">
+        
+        <p style="text-align:left;color:gray">
+          
+          <a href="http://www.cibr.ac.cn/">
+          <img width="300" style="align:left; border-radius:8px; border:0px solid #6495ED" src="/assets/cibr_logo_min.png">
+          </a><br><br>
+          Chinese Institute for Brain Research (CIBR), Beijing<br>
+          Bldg 3, 9 Medical Road, ZGC Life Science Park, Changping, Beijing 102206, China<br><br>
+          <a href="https://aemc2.github.io/JiLab.github.io/" target="_self">首页</a> | 
+          <a href="https://aemc2.github.io/JiLab.github.io/research/" target="_self">关于实验室</a> |           
+          <a href="https://aemc2.github.io/JiLab.github.io/join/" target="_self">联系我们</a> |      
+          <!-- <a href="https://beian.miit.gov.cn/" target="_blank" style="color:gray">京ICP备18029179号</a> -->
+        </p>
+        
+      </div>
+     
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

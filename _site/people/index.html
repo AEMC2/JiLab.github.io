@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>People | JI LAB</title>
+<meta name="generator" content="Jekyll v3.10.0" />
+<meta property="og:title" content="People" />
+<meta name="author" content="Ni Ji" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Computational Neuroscience, Navigation Behavior &amp; Decision-Making" />
+<meta property="og:description" content="Computational Neuroscience, Navigation Behavior &amp; Decision-Making" />
+<link rel="canonical" href="http://localhost:4000/people/" />
+<meta property="og:url" content="http://localhost:4000/people/" />
+<meta property="og:site_name" content="JI LAB" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="People" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"Ni Ji"},"description":"Computational Neuroscience, Navigation Behavior &amp; Decision-Making","headline":"People","url":"http://localhost:4000/people/"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="JI LAB" /></head>
+<body><header class="site-header">
+<style>
+    /* // --- 调整导航栏字体大小 (您已添加) --- */
+.site-nav .page-link {
+  font-size: 24px; 
+}
+
+
+/* // --- 新增代码：调整 Header 高度和标题字体 --- */
+
+/* // 1. 调整 Header 的整体高度 */
+.site-header {
+  min-height: 50px; 
+  /* // <-- 增加这个数值来提高 Header 的整体最小高度 */
+  padding-top: 25px;    
+  /* // 增加上下内边距，让内容垂直居中 */
+  padding-bottom: 10px;
+}
+
+/* <!- 2. 调整 Logo 旁边的网站标题 "JI LAB" 的字体大小 */
+.site-title {
+  font-size: 25px; 
+    font-weight: bold;
+}
+</style>
+  <div class="wrapper"><!-- =================================================================== -->
+    <!-- 这是您需要修改的部分：将默认的网站标题链接替换为 Logo + 文字 -->
+    <!-- =================================================================== -->
+    <a class="site-title" rel="author" href="/">
+        <!-- 请确保您的 logo 图片放在 /assets/logo.png -->
+        <img src="/assets/Jilab_logo.png" alt="Logo" style="height: 70px; vertical-align: middle; margin-right: 8px;">
+        <span>JI LAB</span>
+    </a>
+    <!-- ====================== 修改结束 ============================ --><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/people/">People</a><a class="page-link" href="/research/">Research</a><a class="page-link" href="/publications/">Publications</a><a class="page-link" href="/news/">News</a><a class="page-link" href="/join/">Join Us</a></div>
+      </nav></div>
+
+</header><main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">People</h1>
+  </header>
+
+  <div class="post-content">
+    <style>
+  /* 引入 Font Awesome 图标库，用于标题图标 */
+  @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
+ /* 减少页面两侧空白 */
+  .wrapper {
+    max-width: 1000px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  /* 整体容器 */
+  .people-container {
+    font-family: 'Lato', sans-serif; /* 使用更专业的字体 */
+  }
+
+  /* 1. 分区标题样式 */
+  .people-section-title {
+    font-size: 28px;
+    font-weight: 700;
+    color: #2a7ae2; /* 醒目的蓝色 */
+    padding-bottom: 10px;
+    border-bottom: 3px solid #2a7ae2;
+    margin-top: 50px;
+    margin-bottom: 30px;
+  }
+  .people-section-title .fas {
+    margin-right: 15px;
+  }
+  /* 第一个标题不需要上边距 */
+  .people-section-title:first-of-type {
+    margin-top: 20px;
+  }
+
+  /* 2. 成员卡片布局 (Flexbox) - 保持 PI, Associate Investigator, Lab Manager 的样式 */
+  .person-entry {
+    display: flex;
+    align-items: flex-start; /* 顶部对齐 */
+    gap: 25px; /* 图片和信息之间的间距 */
+    margin-bottom: 30px;
+    padding: 20px;
+    border-radius: 12px; /* 圆角 */
+    background-color: #fdfdfd;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease-in-out; /* 为悬停效果添加平滑动画 */
+  }
+
+  /* 3. 互动效果：鼠标悬停时 */
+  .person-entry:hover {
+    transform: translateY(-5px) scale(1.05); /* 向上浮起并放大 */
+    box-shadow: 0 8px 20px rgba(42, 122, 226, 0.15); /* 蓝色辉光阴影 */
+  }
+
+  /* 成员照片样式 */
+  .person-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* 圆形头像 */
+    object-fit: cover; /* 确保图片不变形 */
+    border: 3px solid #fff;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  }
+
+  /* 成员信息区域 */
+  .person-info h3 {
+    margin-top: 0;
+    margin-bottom: 5px;
+    font-size: 22px;
+    color: #333;
+  }
+
+  .person-info .person-title {
+    font-style: italic;
+    color: #555;
+    margin-bottom: 15px;
+  }
+  
+  .person-info p {
+    margin: 0 0 10px;
+  }
+  
+  /* 成员链接样式（如 Google Scholar）*/
+  .person-links a {
+    display: inline-block;
+    margin-right: 15px;
+    color: #2a7ae2;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+  }
+  .person-links a:hover {
+    text-decoration: underline;
+  }
+  
+  /* ================================================= */
+  /* ========= 新增: 网格布局容器 (Grid Layout) ======== */
+  /* ================================================= */
+  .people-grid {
+    display: grid;
+    /* 创建响应式列：屏幕宽度足够时最多3列，否则减少为2列或1列 */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px; /* 网格项之间的间距 */
+  }
+
+  /* 调整网格布局内的卡片样式 */
+  .people-grid .person-entry {
+    flex-direction: column; /* 垂直堆叠照片和信息 */
+    align-items: center; /* 居中对齐 */
+    text-align: center;
+    margin-bottom: 0; /* 网格间距由gap控制，不再需要margin-bottom */
+  }
+
+  .people-grid .person-photo {
+    width: 120px;
+    height: 120px;
+  }
+
+
+  /* 响应式设计：在手机等小屏幕上垂直堆叠 (原有的) */
+  @media (max-width: 600px) {
+    .person-entry {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    .person-photo {
+      width: 120px;
+      height: 120px;
+    }
+  }
+</style>
+
+<div class="people-container">
+
+  <!-- ============================ Principal Investigator ============================ -->
+  <h2 class="people-section-title"><i class="fas fa-user-tie"></i>Principal Investigator</h2>
+  <div class="person-entry">
+    <img class="person-photo" src="/people/NiJi-PrincipleInvestigator.jpg" />
+    <div class="person-info">
+      <h3>Ni Ji (吉妮), Ph.D.</h3>
+      <p class="person-title">Principal Investigator</p>
+      <p><a href="mailto:niji@cibr.ac.cn">niji@cibr.ac.cn</a><br />Room B319</p>
+      <div class="person-links">
+        <a href="https://scholar.google.com/citations?hl=zh-CN&amp;user=phTqe74AAAAJ" target="_blank">Google Scholar</a>
+        <a href="https://www.cibr.ac.cn/science/team/detail/917" target="_blank">Faculty Page</a>
+        <a href="/CV/Niji.html">C.V.</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================ Associate Investigator ============================ -->
+  <h2 class="people-section-title"><i class="fas fa-bookmark"></i>Associate Investigator</h2>
+  <div class="person-entry">
+    <img class="person-photo" src="/people/jiachang.jpg" />
+    <div class="person-info">
+      <h3>Jiachang Hao (郝家畅), Ph.D.</h3>
+      <p class="person-title">Associate Investigator</p>
+      <p>Ph.D. in Computer science, Beijing University of Posts and Telecommunication</p>
+      <p><a href="mailto:haojiachang@cibr.ac.cn">haojiachang@cibr.ac.cn</a></p>
+      <div class="person-links">
+        <a href="https://scholar.google.com/citations?user=XRR603kAAAAJ&amp;hl=en" target="_blank">Google Scholar</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================ Lab Manager ============================ -->
+  <h2 class="people-section-title"><i class="fas fa-list"></i>Lab Manager</h2>
+  <div class="person-entry">
+    <img class="person-photo" src="/people/Zhangwendi-LabManager5.png" />
+    <div class="person-info">
+      <h3>Wendi Zhang (张文迪), M.S.</h3>
+      <p class="person-title">Lab Manager</p>
+      <p><a href="mailto:zhangwendi@cibr.ac.cn">zhangwendi@cibr.ac.cn</a><br />Floor B3</p>
+      <!-- <div class="person-links">
+        <a href="https://scholar.google.com/citations?user=XRR603kAAAAJ&hl=en" target="_blank">Google Scholar</a>
+      </div> -->
+    </div>
+  </div>
+
+  <!-- ============================ Ph.D. Students ============================ -->
+  <h2 class="people-section-title"><i class="fas fa-user-graduate"></i>Ph.D. Students</h2>
+  
+  <!-- 将所有博士生和员工放在一个新的网格容器中 -->
+  <div class="people-grid">
+    <div class="person-entry">
+      <img class="person-photo" src="/people/Zexi%20Su-PhDstudent.png" />
+      <div class="person-info">
+        <h3>Zexi Su (苏则茜), B.S.</h3>
+        <p class="person-title">2022-present Ph.D. Student</p>
+        <p>Peking University &amp; CIBR</p>
+        <p><a href="mailto:suzexi@cibr.ac.cn">suzexi@cibr.ac.cn</a></p>
+      </div>
+    </div>
+
+    <div class="person-entry">
+      <img class="person-photo" src="/people/QianqianZhang-PhDstudent.jpg" />
+      <div class="person-info">
+        <h3>Qianqian Zhang (张倩倩), M.S.</h3>
+        <p class="person-title">2022-present Ph.D. Student</p>
+        <p>China Agricultural University &amp; CIBR</p>
+        <p><a href="mailto:zhangqianqian@cibr.ac.cn">zhangqianqian@cibr.ac.cn</a></p>
+      </div>
+    </div>
+
+    <div class="person-entry">
+      <img class="person-photo" src="/people/Liuyu-PhDstudent.jpg" />
+      <div class="person-info">
+          <h3>Yu Liu (刘煜), M.S.</h3>
+          <p class="person-title">2023-present Ph.D. Student</p>
+          <p>Peking Union Medical College &amp; CIBR</p>
+          <p><a href="mailto:liuyu@cibr.ac.cn">liuyu@cibr.ac.cn</a></p>
+      </div>
+    </div>
+
+    <div class="person-entry">
+      <img class="person-photo" src="/people/Yating%20Liu-PhDstudent.jpg" />
+      <div class="person-info">
+          <h3>Yating Liu (刘雅婷), B.S.</h3>
+          <p class="person-title">2023-present Ph.D. Student</p>
+          <p>China Agricultural University &amp; CIBR</p>
+          <p><a href="mailto:liuyating@cibr.ac.cn">liuyating@cibr.ac.cn</a></p>
+      </div>
+    </div>
+
+    <div class="person-entry">
+      <img class="person-photo" src="/people/Zhanghanyue-PhDstudent.jpg" />
+      <div class="person-info">
+          <h3>Hanyue Zhang (张含玥), B.S.</h3>
+          <p class="person-title">2023-present Ph.D. Student</p>
+          <p>Peking University &amp; CIBR</p>
+          <p><a href="mailto:zhanghanyue@cibr.ac.cn">zhanghanyue@cibr.ac.cn</a></p>
+      </div>
+    </div>
+
+    <div class="person-entry">
+      <img class="person-photo" src="/people/Lisiqi-PhDstudent.png" />
+      <div class="person-info">
+          <h3>Siqi Li (李思齐), B.S.</h3>
+          <p class="person-title">2024-present Ph.D. Student</p>
+          <p>Peking University &amp; CIBR</p>
+          <p><a href="mailto:lisiqi@cibr.ac.cn">lisiqi@cibr.ac.cn</a></p>
+      </div>
+    </div>
+    
+    <div class="person-entry">
+      <img class="person-photo" src="/people/Ningsiyu-PhDstudent.jpg" />
+      <div class="person-info">
+          <h3>Siyu Ning (宁思宇), B.S.</h3>
+          <p class="person-title">2024-present Ph.D. Student</p>
+          <p>China Agricultural University &amp; CIBR</p>
+          <p><a href="mailto:ningsiyu@cibr.ac.cn">ningsiyu@cibr.ac.cn</a></p>
+      </div>
+    </div>
+
+    <div class="person-entry">
+      <img class="person-photo" src="/people/Litianhe-PhDstudent.png" />
+      <div class="person-info">
+          <h3>Tianhe Li (李天赫), M.S.</h3>
+          <p class="person-title">2025-present Ph.D. Student</p>
+          <p>Peking Union Medical College &amp; CIBR</p>
+          <p><a href="mailto:litianhe@cibr.ac.cn">litianhe@cibr.ac.cn</a></p>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ============================ Lab Staff ============================ -->
+  <h2 class="people-section-title"><i class="fas fa-users"></i>Lab Staff</h2>
+  <div class="people-grid">
+    <div class="person-entry">
+      <img class="person-photo" src="/people/Wangjunjie-Engineer.png" />
+      <div class="person-info">
+        <h3>Junjie Wang (王俊杰), M.S.</h3>
+        <p class="person-title">Deep Learning Engineer</p>
+        <p><a href="mailto:wangjunjie@cibr.ac.cn">wangjunjie@cibr.ac.cn</a></p>
+      </div>
+    </div>
+
+    <div class="person-entry">
+      <img class="person-photo" src="/people/Wangdegang-Engineer.jpg" />
+      <div class="person-info">
+        <h3>Degang Wang (王德港), M.S.</h3>
+        <p class="person-title">Deep Learning Engineer</p>
+        <p><a href="mailto:wangdegang@cibr.ac.cn">wangdegang@cibr.ac.cn</a></p>
+      </div>
+    </div>
+
+    <div class="person-entry">
+      <img class="person-photo" src="/people/fanyu-Reinforcement%20Learning%20Engineer.png" />
+      <div class="person-info">
+        <h3>Fanyu Zhu (朱璠宇), M.S.</h3>
+        <p class="person-title">Reinforcement Learning Engineer</p>
+        <p><a href="mailto:zhufanyu@cibr.ac.cn">zhufanyu@cibr.ac.cn</a></p>
+      </div>
+    </div>
+
+    <div class="person-entry">
+      <img class="person-photo" src="/people/Hujiewen-researchasssistant.png" />
+      <div class="person-info">
+        <h3>Jiewen Hu (胡洁雯), B.S.</h3>
+        <p class="person-title">Research Assistant</p>
+        <p><a href="mailto:hujiewen@cibr.ac.cn">hujiewen@cibr.ac.cn</a></p>
+      </div>
+    </div>
+
+     <div class="person-entry">
+      <img class="person-photo" src="/people/Yaoyaqian-researchasssistant.png" />
+      <div class="person-info">
+        <h3>Yaqian Yao (要雅倩), M.S.</h3>
+        <p class="person-title">Research Assistant</p>
+        <p><a href="mailto:yaoyaqian@cibr.ac.cn">yaoyaqian@cibr.ac.cn</a></p>
+      </div>
+    </div>
+
+    <div class="person-entry">
+      <img class="person-photo" src="/people/JiahuiAn-researchasssistant.png" />
+      <div class="person-info">
+        <h3>Jiahui An (安佳晖), M.S.</h3>
+        <p class="person-title">Research Assistant</p>
+        <p><a href="mailto:anjiahui@cibr.ac.cn">anjiahui@cibr.ac.cn</a></p>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ============================ Lab Alumni ============================ -->
+  <h2 class="people-section-title"><i class="fas fa-history"></i>Lab Alumni</h2>
+  <p>Information about our past lab members can be found on the <a href="/alumni/">Alumni page</a>.</p>
+
+</div>
+
+  </div>
+
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+
+      <div class="footer-col footer-col">
+        
+        <p style="text-align:left;color:gray">
+          
+          <a href="http://www.cibr.ac.cn/">
+          <img width="300" style="align:left; border-radius:8px; border:0px solid #6495ED" src="/assets/cibr_logo_min.png">
+          </a><br><br>
+          Chinese Institute for Brain Research (CIBR), Beijing<br>
+          Bldg 3, 9 Medical Road, ZGC Life Science Park, Changping, Beijing 102206, China<br><br>
+          <a href="https://aemc2.github.io/JiLab.github.io/" target="_self">首页</a> | 
+          <a href="https://aemc2.github.io/JiLab.github.io/research/" target="_self">关于实验室</a> |           
+          <a href="https://aemc2.github.io/JiLab.github.io/join/" target="_self">联系我们</a> |      
+          <!-- <a href="https://beian.miit.gov.cn/" target="_blank" style="color:gray">京ICP备18029179号</a> -->
+        </p>
+        
+      </div>
+     
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
