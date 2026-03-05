@@ -95,7 +95,7 @@ permalink: /alumni/
       <img class="alumni-photo" src="{{ '/people/Zhangwendi-LabManager5.png' | relative_url }}" />
       <div class="alumni-info">
         <h3>Wendi Zhang (张文迪), M.S.</h3>
-        <p class="alumni-title">Lab Manager, 2023-2025</p>
+        <p class="alumni-title">Lab Manager, 2024-2025</p>
       </div>
     </div>
 
