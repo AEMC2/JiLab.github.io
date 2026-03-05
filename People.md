@@ -187,7 +187,7 @@ permalink: /people/
   <!-- ============================ Postdoc ============================ -->
   <h2 class="people-section-title"><i class="fas fa-microscope"></i>Postdoc</h2>
   <div class="person-entry">
-    <img class="person-photo" src="{{"/people/jiachunying.jpg"| relative_url }}" />
+    <img class="person-photo" src="{{"/people/Jiachunying.jpg"| relative_url }}" />
     <div class="person-info">
       <h3>Chunying Jia (贾春莹), Ph.D.</h3>
       <p class="person-title">Postdoc</p>
