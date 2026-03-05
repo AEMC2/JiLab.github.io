@@ -131,7 +131,7 @@ permalink: /alumni/
     </div>
 
     <div class="alumni-entry">
-      <img class="alumni-photo" src="{{ '/people/ChenJiang.jpg' | relative_url }}" />
+      <img class="alumni-photo" src="{{ '/people/Chenjiang.jpg' | relative_url }}" />
       <div class="alumni-info">
         <h3>Chen Jiang (姜晨), B.S.</h3>
         <p class="alumni-title">Intern, Research Assistant, 2022-2024</p>
