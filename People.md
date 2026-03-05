@@ -375,7 +375,7 @@ permalink: /people/
     <div class="person-entry">
       <img class="person-photo" src="{{"/people/intern/wuyilin.jpg"| relative_url }}" />
       <div class="person-info">
-        <h3>Yilin Wu (吴依琳), B.S.</h3>
+        <h3>Yilin Wu (吴依霖), B.S.</h3>
         <p class="person-title">Intern</p>
         <p>Nanjing University, Psychology</p>
       </div>
