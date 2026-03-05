@@ -377,7 +377,7 @@ permalink: /people/
       <div class="person-info">
         <h3>Yilin Wu (吴依琳), B.S.</h3>
         <p class="person-title">Intern</p>
-        <p>Psychology</p>
+        <p>Nanjing University, Psychology</p>
       </div>
     </div>
 
@@ -386,7 +386,7 @@ permalink: /people/
       <div class="person-info">
         <h3>Zixing Jia (贾梓杏), B.S.</h3>
         <p class="person-title">Intern</p>
-        <p>Physics</p>
+        <p>Sun Yat-sen University, Physics</p>
       </div>
     </div>
 
