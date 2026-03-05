@@ -191,7 +191,7 @@ permalink: /people/
     <div class="person-info">
       <h3>Chunying Jia (贾春莹), Ph.D.</h3>
       <p class="person-title">Postdoc</p>
-      <p>Ph.D. in Electronic Engineering, University of Maryland, Baltimore</p>
+      <p>Ph.D. in Electronic Engineering, University of Maryland, Baltimore County</p>
       <p><a href="mailto:jiachunying@cibr.ac.cn">jiachunying@cibr.ac.cn</a><br>Floor A6</p>
       <div class="person-links">
         <a href="https://scholar.google.com/citations?user=QwNC_bQAAAAJ&hl=en" target="_blank">Google Scholar</a>
@@ -200,8 +200,8 @@ permalink: /people/
   </div>
 
 
-  <!-- ============================ Ph.D. Students ============================ -->
-  <h2 class="people-section-title"><i class="fas fa-user-graduate"></i>Ph.D. Students</h2>
+  <!-- ============================ Students ============================ -->
+  <h2 class="people-section-title"><i class="fas fa-user-graduate"></i>Students</h2>
   
   <!-- 将所有博士生和员工放在一个新的网格容器中 -->
   <div class="people-grid">
@@ -289,7 +289,7 @@ permalink: /people/
       <img class="person-photo" src="{{"/people/Liuchun.jpg"| relative_url }}" />
       <div class="person-info">
           <h3>Chun Liu (刘纯), B.S.</h3>
-          <p class="person-title">2025-present Ph.D. Student</p>
+          <p class="person-title">2025-present M.S. Student</p>
           <p>Peking Union Medical College & CIBR</p>
           <p><a href="mailto:liuchun@cibr.ac.cn">liuchun@cibr.ac.cn</a></p>
       </div>
