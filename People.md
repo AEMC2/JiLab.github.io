@@ -373,7 +373,7 @@ permalink: /people/
   <h2 class="people-section-title"><i class="fas fa-seedling"></i>Interns</h2>
   <div class="people-grid">
     <div class="person-entry">
-      <!-- <img class="person-photo" src="{{"/people/placeholder.jpg"| relative_url }}" /> -->
+      <img class="person-photo" src="{{"/people/intern/wuyilin.jpg"| relative_url }}" />
       <div class="person-info">
         <h3>Yilin Wu (吴依琳), B.S.</h3>
         <p class="person-title">Intern</p>
@@ -382,7 +382,7 @@ permalink: /people/
     </div>
 
     <div class="person-entry">
-      <!-- <img class="person-photo" src="{{"/people/placeholder.jpg"| relative_url }}" /> -->
+      <img class="person-photo" src="{{"/people/intern/Jiazixing.jpg"| relative_url }}" />
       <div class="person-info">
         <h3>Zixing Jia (贾梓杏), B.S.</h3>
         <p class="person-title">Intern</p>
@@ -391,11 +391,12 @@ permalink: /people/
     </div>
 
     <div class="person-entry">
-      <!-- <img class="person-photo" src="{{"/people/placeholder.jpg"| relative_url }}" /> -->
+      <img class="person-photo" src="{{"/people/intern/renlinhao.jpg"| relative_url }}" />
       <div class="person-info">
         <h3>Linghao Ren (任凌颢), B.S.</h3>
         <p class="person-title">Intern</p>
-        <p>Information and Computing Science</p>
+        <p>Guilin University of 
+Electronic Technology, Information and Computing Science</p>
       </div>
     </div>
   </div>
