@@ -146,7 +146,7 @@ permalink: /people/
       <p><a href="mailto:niji@cibr.ac.cn">niji@cibr.ac.cn</a><br>Room B319</p>
       <div class="person-links">
         <a href="https://scholar.google.com/citations?hl=zh-CN&user=phTqe74AAAAJ" target="_blank">Google Scholar</a>
-        <a href="https://www.cibr.ac.cn/science/team/detail/917" target="_blank">Faculty Page</a>
+        <a href="https://www.cibr.ac.cn/#/teamDetail/cibrTeamteam/7eaf96c5b298444b84328680fb1b7a15/Ni%20Ji?lang=en" target="_blank">Faculty Page</a>
         <a href="{{ '/CV/Niji.html' | relative_url }}">C.V.</a>
       </div>
     </div>
