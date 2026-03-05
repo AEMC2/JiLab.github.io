@@ -189,7 +189,7 @@ permalink: /people/
   <div class="person-entry">
     <img class="person-photo" src="{{"/people/jiachunying.jpg"| relative_url }}" />
     <div class="person-info">
-      <h3>Jiachunying (贾春莹), Ph.D.</h3>
+      <h3>Chunying Jia (贾春莹), Ph.D.</h3>
       <p class="person-title">Postdoc</p>
       <p>Ph.D. in Electronic Engineering, BUniversity of Maryland, Baltimore County</p>
       <p><a href="mailto:jiachunying@cibr.ac.cn">jiachunying@cibr.ac.cn</a></p>
