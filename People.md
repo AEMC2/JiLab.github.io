@@ -191,7 +191,7 @@ permalink: /people/
     <div class="person-info">
       <h3>Chunying Jia (贾春莹), Ph.D.</h3>
       <p class="person-title">Postdoc</p>
-      <p>Ph.D. in Electronic Engineering, BUniversity of Maryland, Baltimore County</p>
+      <p>Ph.D. in Electronic Engineering, University of Maryland, Baltimore</p>
       <p><a href="mailto:jiachunying@cibr.ac.cn">jiachunying@cibr.ac.cn</a></p>
       <div class="person-links">
         <a href="https://scholar.google.com/citations?user=QwNC_bQAAAAJ&hl=en" target="_blank">Google Scholar</a><br>Floor A6
