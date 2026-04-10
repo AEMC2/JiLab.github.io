@@ -43,12 +43,12 @@ permalink: /CV/Niji.html/
 	
 	<tr>	
 		<td>2016–2022</td>
-		<td>Fellow & Senior Scientist, Massachusetts Institute of Technology</td>
+		<td>Postdoctoral Fellow & Senior Scientist, Massachusetts Institute of Technology</td>
 	</tr>
 	
 	<tr>
 		<td>2013–2015</td>
-		<td>Associate, Harvard University</td>
+		<td>Postdoctoral Associate, Harvard University</td>
 	</tr>
 	
 </table>
