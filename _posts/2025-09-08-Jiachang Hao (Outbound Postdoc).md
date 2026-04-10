@@ -1,5 +1,5 @@
 ---
-title: Jiachang Hao (Outbound Postdoc)
+title: Congratulations to Jiachang on Postdoctoral Fellowship Completion!
 layout: post
 permalink: /2025/09/08/Jiachang Hao (Outbound Postdoc)
 ---

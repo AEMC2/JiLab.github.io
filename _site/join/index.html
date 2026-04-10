@@ -221,41 +221,80 @@
       background-color: #fafdff;
   }
 
-  #floating-decorations {
-  position: absolute; /* 改为 absolute，让它随页面滚动 */
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%; /* 高度将由JS动态调整以适应内容 */
-  z-index: -1;
-  pointer-events: none;
-  overflow: hidden;
-}
+  .photo-timeline {
+    margin-top: 24px;
+    border-radius: 18px;
+    border: 1px solid #e8eef7;
+    background: linear-gradient(180deg, #f8fbff 0%, #fdfefe 100%);
+    padding: 34px 0 42px;
+    overflow: hidden;
+    position: relative;
+  }
+  .photo-timeline::before,
+  .photo-timeline::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 70px;
+    height: 100%;
+    z-index: 2;
+    pointer-events: none;
+  }
+  .photo-timeline::before {
+    left: 0;
+    background: linear-gradient(90deg, rgba(253, 254, 255, 1), rgba(253, 254, 255, 0));
+  }
+  .photo-timeline::after {
+    right: 0;
+    background: linear-gradient(270deg, rgba(253, 254, 255, 1), rgba(253, 254, 255, 0));
+  }
+  .timeline-track {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    width: max-content;
+    will-change: transform;
+  }
+  .timeline-track.is-ready {
+    animation: timeline-scroll var(--timeline-duration, 48s) linear infinite;
+  }
+  .photo-timeline:hover .timeline-track {
+    animation-play-state: paused;
+  }
+  .timeline-item {
+    width: 360px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 16px;
+    box-shadow: 0 14px 34px rgba(0, 0, 0, 0.16);
+    border: 1px solid rgba(255, 255, 255, 0.9);
+    flex: 0 0 auto;
+    transform: scale(0.82);
+    opacity: 0.68;
+    filter: saturate(0.9) brightness(0.95);
+    transform-origin: center center;
+    will-change: transform, opacity, filter;
+  }
+  @keyframes timeline-scroll {
+    from { transform: translate3d(0, 0, 0); }
+    to { transform: translate3d(calc(-1 * var(--scroll-distance, 0px)), 0, 0); }
+  }
+  @media (max-width: 768px) {
+    .timeline-item {
+      width: 250px;
+      height: 176px;
+    }
+    .timeline-track {
+      gap: 14px;
+    }
+  }
 
-/* .deco-image 和 @keyframes 动画样式保持不变 */
-.deco-image {
-  position: absolute;
-  opacity: 1;
-  animation: float-animation 8s ease-in-out infinite;
-  border-radius: 12px; /* 给图片加个小圆角，看起来更柔和 */
-  box-shadow: 0 5px 15px rgba(0,0,0,0.1); /* 加一点阴影，更有层次感 */
-}
-@keyframes float-animation {
-  0% { transform: translateY(0px); }
-  50% { transform: translateY(-15px); }
-  100% { transform: translateY(0px); }
-}
-
-/* ================== 确保主要内容在装饰之上 ================== */
-.join-us-container {
-    position: relative; /* 必须设置，以使 z-index 生效 */
-    z-index: 1; /* 确保 z-index 高于装饰层 */
-    background-color: white; /* 确保有背景色，否则装饰会透过来 */
-}
+  .join-us-container {
+    background-color: white;
+  }
 
 </style>
 
-<div id="floating-decorations" aria-hidden="true"></div>
 <div class="join-us-container">
 
   <div class="welcome-header">
@@ -271,20 +310,20 @@
 
   <!-- =============================== 中文内容区域 =============================== -->
   <div class="lang-zh">
-    <p><font size="4"><strong>我们的实验室正在积极招聘博士后和研究助理。如果您有兴趣加入我们的团队，请与我们联系。 邮箱: <a href="mailto:niji@cibr.ac.cn">niji@cibr.ac.cn</a></strong></font></p>
-    <p><font size="4"><strong>我们欢迎来自不同背景的研究人员加入我们的团队。无论您的背景是<strong style="font-size: 1.2em;">生物学、心理学、物理学、理工科（STEM）还是其他领域</strong>，也无论您是热衷于动手实验、数据挖掘还是建模——只要您愿意并渴望探索大脑如何控制行为的奥秘，我们都欢迎您成为我们团队的一员。</strong></font></p>
+    <p><font size="4"><strong>我们的实验室正在积极招聘博士后，科研助理，算法工程师和实习生。如果您有兴趣加入我们的团队，请与我们联系。 <!-- 邮箱: <a href="mailto:niji@cibr.ac.cn">niji@cibr.ac.cn</a></strong></font></p>
+    <p><font size="4"><strong>-->我们欢迎来自不同背景的研究人员加入我们的团队。无论您的背景是<strong style="font-size: 1.2em;">生物学、心理学、物理学、理工科（STEM）还是其他领域</strong>，也无论您是热衷于动手实验、数据挖掘还是建模——只要您愿意并渴望探索大脑如何控制行为的奥秘，我们都欢迎您成为我们团队的一员。</strong></font></p>
 
     <div class="info-card">
       <h2>中心与课题组简介</h2>
-      <p><strong>中心简介：</strong><a href="http://www.cibr.ac.cn/" target="_blank">北京脑科学与类脑研究中心</a>（CIBR）是北京市政府与中国科学院、北京大学等单位共建的新型研发机构，旨在瞄准世界脑科学前沿，产出一批重大原始创新成果。</p>
-      <p><strong>课题组简介：</strong>我们致力于理解生物脑高效学习与决策的神经计算机制。将前沿神经生物实验技术与深度学习等理论工具相结合，揭示动物脑优于人工智能的关键机制，并开发有应用价值的类脑AI算法。团队近期研究成果被国际顶会 <a href="/papers/2025_Brain_Bandit_A_Biologica.pdf">ICLR 2025</a> 接收。研究团队获得国自然、中国医学科学院、北京市、字节跳动等多项基金支持。</p>
+      <p><strong>中心简介：</strong><a href="http://www.cibr.ac.cn/" target="_blank">北京脑科学与类脑研究所</a>（CIBR）是北京市政府与中国科学院、北京大学、清华大学、北京师范大学、中国医学科学院、中国中医科学院等单位共建的新型研发机构。宗旨是瞄准世界脑科学前沿和国家在脑科学研究领域的战略急需，通过创新体制机制，整合脑科学领域优势资源，搭建脑科学研究综合性实验和研发平台，汇聚全球顶尖人才和优秀科研团队，开展科技攻关，在脑科学领域产出一批重大原始创新成果，推进国际交流合作，建设成为面向科技前沿的世界一流脑科学研究研发机构。研究所重点聚焦脑认知原理解析、脑重大疾病、神经科学新技术、神经计算与神经编解码研究四大研究方向。<br />2024年6月12日，与中国医学科学院北京协和医学院共建的中国医学科学院北京脑和类脑研究院、北京协和医学院脑和类脑学院正式挂牌。</p>
+      <p><strong>课题组简介：</strong>我们致力于理解生物脑在复杂环境下实现感知决策、运动控制与主动、高效学习的神经计算机制。我们将前沿的神经生物实验技术与动力系统、统计物理和深度学习等理论计算工具相结合，对生物实验数据进行深入分析和建模，从而揭示动物脑在感知、学习与决策上优于人工智能的关键机制，并在此基础上开发有应用价值的类脑人工智能算法。团队近期研究已发表在国际机器学习顶会International Conference on Learning and Representations  <a href="/papers/2025_Brain_Bandit_A_Biologica.pdf">ICLR 2025</a>上，并获选现场演讲报告。研究团队获得国自然、中国医学科学院、北京市、字节跳动等多项基金支持。</p>
     </div>
     
     <div class="info-card">
       <h2>开放职位</h2>
       <details class="job-listing-card">
         <summary class="job-summary">
-          <div class="summary-header"><h3>博士后 (Postdoctoral Fellow)</h3><span class="expand-icon">+</span></div>
+          <div class="summary-header"><h3>博士后</h3><span class="expand-icon">+</span></div>
           <p class="summary-description">独立开展实验室相关方向研究，领导或协助实验室新课题的开发与推进。协助指导学生和技术人员，协助撰写课题相关基金和文章等。</p>
         </summary>
         <div class="job-details">
@@ -308,7 +347,7 @@
       </details>
       <details class="job-listing-card">
         <summary class="job-summary">
-          <div class="summary-header"><h3>研究助理 (Research Assistant)</h3><span class="expand-icon">+</span></div>
+          <div class="summary-header"><h3>研究助理</h3><span class="expand-icon">+</span></div>
           <p class="summary-description">在PI的指导下参与和协助实验室课题研究，负责实验执行、数据收集与初步分析等工作。</p>
         </summary>
         <div class="job-details">
@@ -354,7 +393,7 @@
       </details>
       <details class="job-listing-card">
         <summary class="job-summary">
-          <div class="summary-header"><h3>实习生 / 毕设实习生 (Intern)</h3><span class="expand-icon">+</span></div>
+          <div class="summary-header"><h3>实习生 / 毕设实习生</h3><span class="expand-icon">+</span></div>
           <p class="summary-description">在PI或资深研究人员的指导下，协作或独立完成指定的科研项目，学习前沿研究方法。</p>
         </summary>
         <div class="job-details">
@@ -495,11 +534,15 @@
     </div>
   </div>
 
+  <section class="photo-timeline" aria-label="Lab photo timeline">
+    <div class="timeline-track" id="timeline-track"></div>
+  </section>
+
 </div>
 
 <!-- JavaScript for Language Switching -->
 <script>
-  // JavaScript for Language Switching AND Floating Decorations
+  // JavaScript for Language Switching + bottom photo timeline
 document.addEventListener('DOMContentLoaded', function() {
   
   // --- 语言切换功能 (保留不变) ---
@@ -522,23 +565,6 @@ document.addEventListener('DOMContentLoaded', function() {
     btnZh.classList.remove('active');
   });
 
-  // --- 全新的浮动装饰功能 ---
-  const decorationsContainer = document.getElementById('floating-decorations');
-  const mainContent = document.querySelector('.join-us-container');
-
-  const siteHeader = document.querySelector('.site-header');
-
-  // 1. 动态获取导航栏的高度
-  const headerHeight = siteHeader ? siteHeader.offsetHeight+400 : 60; // 如果获取失败，默认60px
-
-  // 2. 将装饰容器的顶部（top）设置为导航栏的高度，这样它就从导航栏下面开始了
-  decorationsContainer.style.top = `${headerHeight}px`;
-
-  // ====================================================================
-
-  // 动态设置装饰层的高度，使其与主要内容等高
-  decorationsContainer.style.height = `${mainContent.offsetHeight}px`;
-  
   const imageUrls = [
     "/JiLab.github.io/assets/lab_photo1.jpg",
     "/JiLab.github.io/assets/lab_photo2.jpg",
@@ -550,35 +576,57 @@ document.addEventListener('DOMContentLoaded', function() {
     "/JiLab.github.io/assets/lab_photo8.jpg"
   ];
 
-  const imageCount = 8;
-  const imagesPerSide = imageCount / 2;
-  const slotHeight = mainContent.offsetHeight / imagesPerSide;
+  const track = document.getElementById('timeline-track');
+  if (!track) return;
 
-  for (let i = 0; i < imageCount; i++) {
+  const timelineImages = imageUrls.concat(imageUrls);
+  for (let i = 0; i < timelineImages.length; i++) {
     const img = document.createElement('img');
-    img.src = imageUrls[i % imageUrls.length];
-    img.className = 'deco-image';
-
-    const size = Math.random() * 350 + 300;
-    img.style.width = `${size}px`;
-    img.style.height = 'auto';
-
-    const side = i % 2 === 0 ? 'left' : 'right';
-    const slotIndex = Math.floor(i / 2); 
-    const slotStartTop = slotIndex * slotHeight;
-    const top = slotStartTop + (Math.random() * (slotHeight - size));
-
-    const position = Math.random() * 15 + 2; 
-    
-    img.style.top = `${top}px`;
-    img.style[side] = `${position}vw`;
-    
-    const rotation = Math.random() * 20 - 10;
-    img.style.transform = `rotate(${rotation}deg)`;
-    img.style.animationDelay = `${Math.random() * -8}s`;
-
-    decorationsContainer.appendChild(img);
+    img.src = timelineImages[i];
+    img.className = 'timeline-item';
+    img.alt = 'JI Lab activity photo';
+    track.appendChild(img);
   }
+
+  const activateTimeline = function() {
+    const scrollDistance = track.scrollWidth / 2;
+    if (!scrollDistance) return;
+    const durationSeconds = window.innerWidth <= 768 ? 42 : 54;
+    track.style.setProperty('--scroll-distance', `${scrollDistance}px`);
+    track.style.setProperty('--timeline-duration', `${durationSeconds}s`);
+    track.classList.add('is-ready');
+  };
+
+  const updateTimelineFocus = function() {
+    const container = track.parentElement;
+    if (!container) return;
+    const containerRect = container.getBoundingClientRect();
+    const viewportCenter = containerRect.left + (containerRect.width / 2);
+
+    Array.from(track.children).forEach(function(item) {
+      const rect = item.getBoundingClientRect();
+      const itemCenter = rect.left + (rect.width / 2);
+      const distance = Math.abs(itemCenter - viewportCenter);
+      const maxDistance = (containerRect.width / 2) + (rect.width / 2);
+      const proximity = Math.max(0, 1 - (distance / maxDistance));
+
+      const scale = 0.8 + (0.35 * proximity);
+      const opacity = 0.56 + (0.44 * proximity);
+      const saturation = 0.88 + (0.16 * proximity);
+      const brightness = 0.92 + (0.11 * proximity);
+
+      item.style.transform = `scale(${scale})`;
+      item.style.opacity = opacity.toFixed(3);
+      item.style.filter = `saturate(${saturation.toFixed(3)}) brightness(${brightness.toFixed(3)})`;
+    });
+
+    window.requestAnimationFrame(updateTimelineFocus);
+  };
+
+  window.addEventListener('load', activateTimeline, { once: true });
+  window.addEventListener('resize', activateTimeline);
+  activateTimeline();
+  window.requestAnimationFrame(updateTimelineFocus);
 });
 </script>
 
