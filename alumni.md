@@ -10,8 +10,14 @@ permalink: /alumni/
 
   .alumni-container {
     font-family: 'Lato', sans-serif;
-    max-width: 1000px;
+    max-width: min(1480px, calc(100vw - 72px));
     margin: 0 auto;
+  }
+
+  @media (max-width: 900px) {
+    .alumni-container {
+      max-width: calc(100vw - 32px);
+    }
   }
 
   .alumni-year-title {

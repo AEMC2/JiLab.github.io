@@ -80,13 +80,21 @@
   @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
  /* 鍑忓皯椤甸潰涓や晶绌虹櫧 */
   .wrapper {
-    max-width: 1000px;
-    padding-left: 20px;
-    padding-right: 20px;
+    max-width: min(1480px, calc(100vw - 72px));
+    padding-left: 36px;
+    padding-right: 36px;
   }
   /* 鏁翠綋瀹瑰櫒 */
   .people-container {
     font-family: 'Lato', sans-serif; /* 浣跨敤鏇翠笓涓氱殑瀛椾綋 */
+  }
+
+  @media (max-width: 900px) {
+    .wrapper {
+      max-width: calc(100vw - 32px);
+      padding-left: 16px;
+      padding-right: 16px;
+    }
   }
 
   /* 1. 鍒嗗尯鏍囬鏍峰紡 */

@@ -4,5 +4,27 @@
 @import "minima";
 
 .site-nav .page-link {
-  font-size: 18px; // <-- 修改这个数值来调整字体大小
+  font-size: 18px;
+}
+
+// Override Minima's narrow 800px wrapper so desktop pages expand with
+// the browser width while remaining comfortable on tablets and phones.
+.wrapper {
+  max-width: min(1480px, calc(100vw - 72px));
+  padding-left: 36px;
+  padding-right: 36px;
+}
+
+@media screen and (max-width: 900px) {
+  .wrapper {
+    max-width: calc(100vw - 32px);
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+.post,
+.post-content,
+.page-content {
+  width: 100%;
 }

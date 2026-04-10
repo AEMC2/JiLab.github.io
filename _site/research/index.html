@@ -76,281 +76,394 @@
 
   <div class="post-content">
     <style>
-/* 全局页面字体和背景 */
-.wrapper {
-    max-width: 1700px;
-    padding-left: 20px;
-    padding-right: 20px;
+  .research-shell {
+    --ink: #13364a;
+    --muted: #526779;
+    --line: #d9e5ef;
+    --card: #ffffff;
+    --mist: #f4f8fb;
+    --accent: #0e7082;
+    --accent-soft: #dff1f4;
+    --warm: #c97a2b;
+    max-width: 1240px;
+    margin: 0 auto;
+    color: var(--ink);
+    font-family: Georgia, "Times New Roman", serif;
   }
 
-.research-container {
-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-line-height: 1.6;
-}
+  .research-hero {
+    position: relative;
+    overflow: hidden;
+    border-radius: 28px;
+    padding: 72px 42px 44px;
+    margin-bottom: 44px;
+    color: #ffffff;
+    background:
+      linear-gradient(135deg, rgba(9, 36, 53, 0.9), rgba(13, 83, 96, 0.72)),
+      url("/JiLab.github.io/research/background.png") center/cover no-repeat;
+    box-shadow: 0 22px 48px rgba(7, 30, 44, 0.2);
+  }
 
-/* 顶部全宽背景 */
-/* 顶部全宽背景 */
-.hero-section-full-width {
-    color: white;
-    padding: 80px 25px;
-    text-align: center;
-    /* --- 用户修改 ---: 图片路径已更新为本地图片 */
-    background-image: url("/JiLab.github.io/research/background.png");
-    background-size: cover;
-    background-position: center;
-}
+  .research-hero::after {
+    content: "";
+    position: absolute;
+    inset: auto -8% -32% auto;
+    width: 340px;
+    height: 340px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.22), rgba(255, 255, 255, 0));
+    pointer-events: none;
+  }
 
-/* 这个容器让内部的文字内容保持居中，不会延伸到屏幕边缘 */
-.hero-content-centered {
-/* --- 修改点: 增加了最大宽度以减少两侧空白 --- */
-max-width: 1700px;
-margin: 0 auto;
-}
+  .research-kicker {
+    display: inline-block;
+    margin-bottom: 16px;
+    padding: 6px 12px;
+    border-radius: 999px;
+    letter-spacing: 0.08em;
+    font-size: 0.78rem;
+    text-transform: uppercase;
+    background: rgba(255, 255, 255, 0.14);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+  }
 
-.hero-content-centered h2 {
-font-size: 3em;
-font-weight: 600;
-margin-top:-30px;
-/* margin-bottom: 30px; */
-}
+  .research-hero h2 {
+    margin: 0 0 18px;
+    font-size: clamp(2.4rem, 5vw, 4.1rem);
+    line-height: 1.03;
+    letter-spacing: -0.03em;
+    font-weight: 700;
+  }
 
-.hero-content-centered .intro-text {
-max-width: 1550px;
-margin: 0 auto 50px auto;
-font-size: 1.5em;
-}
+  .research-hero p {
+    max-width: 960px;
+    margin: 0;
+    font-size: 1.14rem;
+    line-height: 1.9;
+    color: rgba(255, 255, 255, 0.92);
+  }
 
-/* 三大研究方向模块 */
-.pillars-container {
-display: flex;
-justify-content: center;
-align-items: flex-start;
-flex-wrap: wrap;
-gap: 20px;
-}
+  .research-pillars {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+    margin-top: 32px;
+  }
 
-.pillar {
-flex: 1;
-min-width: 280px;
-padding: 0 25px;
-text-align: center;
-position: relative;
-}
+  .research-pillar {
+    padding: 22px 20px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.14);
+    border: 1px solid rgba(255, 255, 255, 0.16);
+    backdrop-filter: blur(10px);
+  }
 
-/* 模块之间的分割线 */
-@media (min-width: 992px) {
-.pillar:not(:last-child)::after {
-content: '';
-position: absolute;
-top: 15%;
-right: 0;
-height: 70%;
-width: 1px;
-background-color: rgba(255, 255, 255, 0.4);
-}
-}
+  .research-pillar h3 {
+    margin: 0 0 8px;
+    font-size: 1.2rem;
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-weight: 700;
+    color: #ffffff;
+  }
 
-.pillar .icon {
-width: 65px;
-height: 65px;
-margin-bottom: 20px;
-}
+  .research-pillar p {
+    margin: 0;
+    font-size: 0.98rem;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.9);
+  }
 
-.pillar h3 {
-font-size: 2em;
-margin-bottom: 10px;
-}
+  .research-stack {
+    display: grid;
+    gap: 28px;
+  }
 
-.pillar p {
-font-size: 1.05em;
-}
+  .research-card {
+    display: grid;
+    grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr);
+    gap: 28px;
+    align-items: stretch;
+    padding: 28px;
+    border-radius: 26px;
+    background: linear-gradient(180deg, var(--card), #fbfdff);
+    border: 1px solid var(--line);
+    box-shadow: 0 14px 34px rgba(19, 54, 74, 0.08);
+  }
 
-/* 主要内容区域 */
-.main-content-section {
-padding: 60px 25px;
-text-align: center;
-background-color: #ffffff;
-/* --- 修改点: 增加了最大宽度以减少两侧空白 --- */
-max-width: 2320px;
-margin: 0 auto;
-}
+  .research-card.reverse {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1.05fr);
+  }
 
-.main-content-section .section-title {
-font-size: 2.1em;
-color: #0d5f6f;
-max-width: 900px;
-margin: 0 auto 30px auto;
-line-height: 1.4;
-font-weight: 500;
-}
+  .research-copy {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 0;
+  }
 
-.main-content-section .details-text {
-max-width: 900px;
-margin: 0 auto;
-text-align: justify;
-color: #558;
-font-size: 1.2em;
-}
+  .research-index {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 14px;
+    font-size: 0.84rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--accent);
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-weight: 700;
+  }
 
-/* 媒体展示区域 */
-.media-grid {
-display: flex;
-justify-content: center;
-flex-wrap: wrap;
-gap: 35px;
-padding: 20px;
-/* --- 修改点: 增加了最大宽度以减少两侧空白 --- */
-max-width: 1820px;
-margin: 30px auto 50px auto;
-}
+  .research-index::before {
+    content: "";
+    width: 34px;
+    height: 1px;
+    background: rgba(14, 112, 130, 0.45);
+  }
 
-.media-item {
-flex: 1;
-min-width: 300px;
-max-width: 350px;
-text-align: center;
-}
+  .research-copy h3 {
+    margin: 0 0 16px;
+    font-size: clamp(1.7rem, 2.4vw, 2.4rem);
+    line-height: 1.16;
+    letter-spacing: -0.025em;
+    color: var(--ink);
+  }
 
-/* 媒体文件样式 (图片和视频) */
-.media-item img, .media-item video {
-width: 100%;
-height: auto;
-border-radius: 8px;
-box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-background-color: #f0f0f0;
-margin-bottom: 15px;
-}
+  .research-copy p {
+    margin: 0;
+    color: var(--muted);
+    font-size: 1.04rem;
+    line-height: 1.9;
+    text-align: left;
+  }
 
-.media-item .caption {
-font-size: 1em;
-color: #666;
-font-weight: 500;
-}
+  .research-media-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+    min-width: 0;
+  }
 
+  .research-media-card {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .research-media-card.feature {
+    grid-column: span 2;
+  }
+
+  .research-media-frame {
+    position: relative;
+    overflow: hidden;
+    border-radius: 18px;
+    aspect-ratio: 4 / 3;
+    background: linear-gradient(180deg, #edf4f8, #dfeaf1);
+    border: 1px solid #d7e4ee;
+    box-shadow: 0 10px 24px rgba(19, 54, 74, 0.08);
+  }
+
+  .research-media-card.feature .research-media-frame {
+    aspect-ratio: 16 / 9;
+  }
+
+  .research-media-frame img,
+  .research-media-frame video {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+  }
+
+  .research-media-card.contain .research-media-frame img,
+  .research-media-card.contain .research-media-frame video {
+    object-fit: contain;
+    padding: 12px;
+    background: #f7fbfd;
+  }
+
+  .research-media-card.square .research-media-frame {
+    aspect-ratio: 1 / 1;
+  }
+
+  .research-caption {
+    margin: 0;
+    padding: 0 4px;
+    color: var(--muted);
+    font-size: 0.95rem;
+    line-height: 1.55;
+    font-family: "Segoe UI", Arial, sans-serif;
+  }
+
+  .research-divider {
+    margin: 36px 0 6px;
+    height: 2px;
+    border: 0;
+    background-image: linear-gradient(to right, rgba(201, 122, 43, 0), rgba(201, 122, 43, 0.75), rgba(201, 122, 43, 0));
+  }
+
+  @media (max-width: 980px) {
+    .research-hero {
+      padding: 54px 24px 30px;
+    }
+
+    .research-pillars,
+    .research-card,
+    .research-card.reverse {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  @media (max-width: 720px) {
+    .research-media-grid,
+    .research-media-card.feature {
+      grid-template-columns: 1fr;
+      grid-column: span 1;
+    }
+
+    .research-card {
+      padding: 22px;
+    }
+
+    .research-copy p,
+    .research-hero p {
+      font-size: 1rem;
+    }
+  }
 </style>
 
-<!-- ======================= 顶部介绍区域 (现在是全宽背景) ======================= -->
-<div class="hero-section-full-width">
-<div class="hero-content-centered">
-<h2>Research</h2>
-<p class="intro-text">
-Gaining insight into the navigational algorithms of organisms and their neural network-level regulatory mechanisms not only deepens our understanding of biological navigational decision-making but also offers novel perspectives for developing artificial intelligence (AI) navigation control systems. Our laboratory uses animal navigational behaviors as a model to explore the neural computational principles of the animal brain in complex environments, with a focus on three key aspects: (1) multimodal sensory integration; (2) behavioral decision-making; and (3) memory and learning. We integrate interdisciplinary approaches—including whole-brain imaging, quantitative behavioral analysis, machine learning, and theoretical modeling—to uncover the computational principles that make biological neural networks advantageous compared to existing artificial neural networks.
-</p>
-<div class="pillars-container">
-  <div class="pillar">
-    <!-- --- 用户修改 ---: 请将这里的图标路径换成您自己的图标文件 -->
-    <!-- <img src="/assets/icon_modeling.svg" alt="Modeling Icon" class="icon"> -->
-    <h3>Modeling</h3>
-    <p>Modeling navigation behavior to decode biological algorithms.</p>
+<div class="research-shell">
+  <section class="research-hero">
+    <span class="research-kicker">Research Themes</span>
+    <h2>Computational principles of natural intelligence, from behavior to brain dynamics</h2>
+    <p>
+      Gaining insight into the navigational algorithms of organisms and their neural network-level regulatory
+      mechanisms not only deepens our understanding of biological navigational decision-making but also offers new
+      perspectives for building more adaptive artificial intelligence. Our lab uses animal navigation and active
+      learning as model systems to study how brains integrate sensation, memory, decision-making, and learning in
+      complex environments.
+    </p>
+    <div class="research-pillars">
+      <div class="research-pillar">
+        <h3>Modeling</h3>
+        <p>Quantitative experiments and machine learning models that describe and simulate biological algorithms.</p>
+      </div>
+      <div class="research-pillar">
+        <h3>Dynamics</h3>
+        <p>Whole-brain recordings and circuit-level analysis of how neural population activity supports behavior.</p>
+      </div>
+      <div class="research-pillar">
+        <h3>Comparison</h3>
+        <p>Comparative work across species and AI systems to expose the core principles of efficient intelligence.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="research-stack">
+    <section class="research-card">
+      <div class="research-copy">
+        <div class="research-index">Theme 01</div>
+        <h3>Quantitative experiments and ML/statistical modeling of animal navigation</h3>
+        <p>
+          We use <em>Caenorhabditis elegans</em> as a model system to decipher the neural computational mechanisms
+          underlying navigation in complex environments. Capitalizing on its fully mapped connectome, we study how the
+          worm optimizes survival through integrated processes of sensation, learning, and decision-making. Our work
+          spans adaptive foraging, probabilistic associative learning in noisy settings, and olfaction-based food
+          object recognition. To support these questions, we established a freely moving whole-brain imaging platform
+          that enables cellular-resolution analysis of neural activity during behavior, providing direct insight into
+          the circuit-level mechanisms of adaptive control.
+        </p>
+      </div>
+      <div class="research-media-grid">
+        <figure class="research-media-card feature contain">
+          <div class="research-media-frame">
+            <img src="/JiLab.github.io/research/WBI-platform.png" alt="Whole-brain imaging platform" />
+          </div>
+          <figcaption class="research-caption">Whole-brain imaging platform for freely moving animals.</figcaption>
+        </figure>
+        <figure class="research-media-card square contain">
+          <div class="research-media-frame">
+            <img src="/JiLab.github.io/research/C.elegans.png" alt="C. elegans model system" />
+          </div>
+          <figcaption class="research-caption">C. elegans as a compact model for navigation and learning.</figcaption>
+        </figure>
+        <figure class="research-media-card">
+          <div class="research-media-frame">
+            <img src="/JiLab.github.io/research/WBI.gif" alt="Behavior and brain activity recording" />
+          </div>
+          <figcaption class="research-caption">Behavioral dynamics paired with neural activity measurements.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="research-card reverse">
+      <div class="research-media-grid">
+        <figure class="research-media-card feature">
+          <div class="research-media-frame">
+            <img src="/JiLab.github.io/research/motor.jpg" alt="Motor interception in daily life" />
+          </div>
+          <figcaption class="research-caption">Everyday interception tasks motivate our sensorimotor modeling questions.</figcaption>
+        </figure>
+        <figure class="research-media-card">
+          <div class="research-media-frame">
+            <img src="/JiLab.github.io/research/interception%20new%20paradigm%20.gif" alt="Interception behavior paradigm" />
+          </div>
+          <figcaption class="research-caption">A controlled behavioral paradigm for predictive motor interception.</figcaption>
+        </figure>
+        <figure class="research-media-card">
+          <div class="research-media-frame">
+            <img src="/JiLab.github.io/research/interception%20paradigm.gif" alt="Task dynamics in interception experiments" />
+          </div>
+          <figcaption class="research-caption">Task dynamics used to probe anticipation and timing in neural systems.</figcaption>
+        </figure>
+      </div>
+      <div class="research-copy">
+        <div class="research-index">Theme 02</div>
+        <h3>RNN analysis of motor control and predictive interception</h3>
+        <p>
+          Predictive motor control is a core feature of everyday behavior. We use recurrent neural networks to model
+          the neural mechanisms that transform rapidly changing sensory signals into well-timed actions, using examples
+          such as racket-ball interception. Our models are trained on large-scale neural population recordings from the
+          common marmoset and then analyzed to identify predictive activity, dynamical primitives, and other neural
+          signatures of anticipation. This work aims to uncover the computational principles that allow the brain to
+          perform fast and accurate motor interception in a dynamic world.
+        </p>
+      </div>
+    </section>
+
+    <section class="research-card">
+      <div class="research-copy">
+        <div class="research-index">Theme 03</div>
+        <h3>Human exploration and function learning in high-dimensional environments</h3>
+        <p>
+          Humans and animals must actively sample rich environments and efficiently discover the low-dimensional
+          structure that matters for reward and decision-making. We study human exploratory behavior in contextual
+          bandit tasks where the context resides in a genuinely high-dimensional space. Unlike classic low-dimensional
+          settings, these tasks require active exploration, hypothesis formation, and dimensionality reduction rather
+          than relying on explicitly instructed relevant features. Our goal is to reveal the learning strategies that
+          make humans remarkably efficient in complex environments and to understand how those strategies differ from
+          current AI systems.
+        </p>
+      </div>
+      <div class="research-media-grid">
+        <figure class="research-media-card square contain">
+          <div class="research-media-frame">
+            <img src="/JiLab.github.io/research/Topic%203%20.png" alt="Illustration of high-dimensional restaurant choice" />
+          </div>
+          <figcaption class="research-caption">An intuitive example of high-dimensional context-guided choice.</figcaption>
+        </figure>
+        <figure class="research-media-card feature contain">
+          <div class="research-media-frame">
+            <img src="/JiLab.github.io/research/Topic%203-2.png" alt="Possible human behavior patterns in high dimensions" />
+          </div>
+          <figcaption class="research-caption">Possible exploration patterns as humans search for useful structure.</figcaption>
+        </figure>
+      </div>
+    </section>
   </div>
-  <div class="pillar">
-    <!-- --- 用户修改 ---: 请将这里的图标路径换成您自己的图标文件 -->
-    <!-- <img src="/assets/icon_dynamics.svg" alt="Dynamics Icon" class="icon"> -->
-    <h3>Dynamics</h3>
-    <p>Imaging brain-wide circuits and analyzing computational dynamics.</p>
-  </div>
-  <div class="pillar">
-    <!-- --- 用户修改 ---: 请将这里的图标路径换成您自己的图标文件 -->
-    <!-- <img src="/assets/icon_comparison.svg" alt="Comparison Icon" class="icon"> -->
-    <h3>Comparison</h3>
-    <p>Comparing species and AI agents to uncover core neural principles.</p>
-  </div>
-</div>
-<!-- ======================= 核心内容区域 ======================= -->
-</div>
-</div>
-<div class="research-container">
-<!-- ======================= 核心内容区域1 ======================= -->
-<div class="main-content-section">
-<h3 class="section-title">
-Quantitative Experiments + ML/Statistical Modeling: Describe, Simulate Animal Navigation &amp; Explain Algorithmic Mechanisms
-</h3>
-<p class="details-text">
-We employs the Caenorhabditis elegans (C. elegans), as a model system to decipher the neural computational mechanisms underlying its navigational behaviors in complex environments. Capitalizing on its fully mapped connectome, we focus on understanding how the worm optimizes survival strategies through integrated processes of sensation, learning, and decision-making. Our research is organized around three primary directions: (1) Adaptive foraging in C. elegans, where we quantify the dynamic transitions between "roaming" and "dwelling" behavioral states to uncover foraging algorithms across different environmental contexts; (2) Probabilistic associative learning in C. elegans, investigating how the worm performs probabilistic associative learning in noisy settings and elucidating the neural substrates that support Bayesian-like inference; and (3) Olfaction-based (food) object recognition, examining how C. elegans utilizes olfactory cues to distinguish among different bacterial (food) types from a distance, and clarifying the neural mechanisms by which it integrates multisensory information to approach beneficial substances and avoid harmful ones. To support these investigations, we have established a freely moving whole-brain imaging platform, which enables us to monitor and analyze neural activity across the entire brain at cellular resolution during behavior, thereby providing direct insights into the circuit-level mechanisms governing these adaptive processes.
-</p>
-</div>
 
-<!-- ======================= 媒体展示区域1 ======================= -->
-<div class="media-grid">
-<div class="media-item">
-<!-- --- 用户修改 ---: 请将这里的图片或GIF文件路径换成您自己的文件 -->
-<img src="/JiLab.github.io/research/C.elegans.png" alt="Navigational behavior visualization" />
-<p class="caption">C.elegans</p>
-</div>
-<div class="media-item">
-<!-- --- 用户修改 ---: 请将这里的图片或GIF文件路径换成您自己的文件 -->
-<img src="/JiLab.github.io/research/WBI.gif" alt="Behaivor" />
-<p class="caption">Behaivor</p>
-</div>
-
-<div class="media-item">
-<!-- --- 用户修改 ---: 请将这里的图片或GIF文件路径换成您自己的文件 -->
-<img src="/JiLab.github.io/research/WBI-platform.png" alt="C. elegans worm" />
-<p class="caption">Whole-Brain Imaging Platform</p>
-</div>
-
-</div>
-<!-- ======================= 核心内容区域2 ======================= -->
-<div class="main-content-section">
-<h3 class="section-title">
-Analysis of RNNs that can learn one or more motor tasks
-</h3>
-<p class="details-text">
- Predictive motor control is a fundamental feature of everyday behavior. A quintessential example is the game of table tennis: how does the brain predict the ball's trajectory to initiate arm movement at the precise moment, ensuring accurate contact between the racket and the ball? To address this, we employ Recurrent Neural Networks (RNNs) to model the neural mechanisms underlying this complex sensorimotor transformation. We train RNNs on large-scale neural population data—specifically, spike recordings obtained via invasive electrodes implanted in the common marmoset. The dynamics and outputs of the trained RNNs are then meticulously analyzed to identify potential neural correlates of anticipation, such as predictive activity and dynamical primitives, and to uncover the fundamental computational principles the brain uses to perform fast, accurate motor interception in a dynamic world.
-</p>
-</div>
-
-<!-- ======================= 媒体展示区域2 ======================= -->
-<div class="media-grid">
-<div class="media-item">
-<!-- --- 用户修改 ---: 请将这里的图片或GIF文件路径换成您自己的文件 -->
-<img src="/JiLab.github.io/research/motor.jpg" alt="Interception in Daily Life
-" />
-<p class="caption">Interception in Daily Life</p>
-</div>
-<div class="media-item">
-<!-- --- 用户修改 ---: 请将这里的图片或GIF文件路径换成您自己的文件 -->
-<img src="/JiLab.github.io/research/interception%20new%20paradigm%20.gif" alt="Interception Behaivor" />
-<p class="caption">Interception Behaivor</p>
-</div>
-
-<div class="media-item">
-<!-- --- 用户修改 ---: 请将这里的图片或GIF文件路径换成您自己的文件 -->
-<img src="/JiLab.github.io/research/interception%20paradigm.gif" alt="Interception Behaivor" />
-<p class="caption">Interception Behaivor</p>
-</div>
-
-</div>
-<!-- ======================= 核心内容区域3 ======================= -->
-<div class="main-content-section">
-<h3 class="section-title">
-Human exploration &amp; function learning in high dimensions
-</h3>
-<p class="details-text">
-Humans and animals need to use environmental context to guide their learning and decision-making. How they actively sample a high dimensional environment, and efficiently learn the low-dimensional mapping between environmental features and task-specific values is unclear. What we do know is that humans and animals are constantly faced with a high-dimensional sensory world and they are indeed efficient learners compared to some of today’s AI models. The goal of this study is to record and analyze human exploratory behavior while they learn a contextual bandit task where the “context” resides in a high-dimensional space. Past studies suggest that human exploration in contextual bandit tasks can be approximated by the non-parametric algorithm, Gaussian process regression. However, those tasks are relatively low-dimensional and the task-relevant dimensions are explicitly told to the participants, thereby overriding the need for active exploration and dimensionality reduction. We hope our study can leverage a more naturalistic task setting to truly uncover the active learning potential in humans.
-</p>
-</div>
-
-<!-- ======================= 媒体展示区域 ======================= -->
-<div class="media-grid">
-<div class="media-item">
-<!-- --- 用户修改 ---: 请将这里的图片或GIF文件路径换成您自己的文件 -->
-<img src="/JiLab.github.io/research/Topic%203%20.png" alt="How to Choose a Restaurant" style="width: 300px; height: 300px;" />
-<p class="caption">How to Choose a Restaurant?</p>
-</div>
-<div class="media-item">
-<!-- --- 用户修改 ---: 请将这里的图片或GIF文件路径换成您自己的文件 -->
-<img src="/JiLab.github.io/research/Topic%203-2.png" alt="Possible Behavior" style="width: 500px;" />
-<p class="caption">Possible Behavior</p>
-</div>
-
-</div>
-
-
-<br clear="left" />
-<hr style="height:2px; border:0; background-image: linear-gradient(to right, rgba(255, 94, 19, 0), rgba(255, 94, 19, 0.6), rgba(255, 94, 19, 0))" />
-<br />
-
+  <hr class="research-divider" />
 </div>
 
   </div>

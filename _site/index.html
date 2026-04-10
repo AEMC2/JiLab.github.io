@@ -78,9 +78,17 @@
     <style>
   /* 减少页面两侧空白 */
   .wrapper {
-    max-width: 1100px;
-    padding-left: 20px;
-    padding-right: 20px;
+    max-width: min(1480px, calc(100vw - 72px));
+    padding-left: 36px;
+    padding-right: 36px;
+  }
+
+  @media (max-width: 900px) {
+    .wrapper {
+      max-width: calc(100vw - 32px);
+      padding-left: 16px;
+      padding-right: 16px;
+    }
   }
 
   /* 第一张大图的样式 */

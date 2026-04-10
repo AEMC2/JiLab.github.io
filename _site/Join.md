@@ -7,12 +7,20 @@ permalink: /join/
 <style>
   /* ================== 通用样式 ================== */
   .wrapper {
-    max-width: 1000px;
-    padding-left: 20px;
-    padding-right: 20px;
+    max-width: min(1480px, calc(100vw - 72px));
+    padding-left: 36px;
+    padding-right: 36px;
   }
   .join-us-container {
     font-family: sans-serif;
+  }
+
+  @media (max-width: 900px) {
+    .wrapper {
+      max-width: calc(100vw - 32px);
+      padding-left: 16px;
+      padding-right: 16px;
+    }
   }
   
   /* ================== 语言切换器样式 ================== */
