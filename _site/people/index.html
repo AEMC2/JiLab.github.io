@@ -162,17 +162,34 @@
     margin: 0 0 10px;
   }
   
-  /* 鎴愬憳閾炬帴鏍峰紡锛堝 Google Scholar锛?/
+  /* Person link buttons */
+  .person-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 12px;
+  }
   .person-links a {
-    display: inline-block;
-    margin-right: 15px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 14px;
+    border-radius: 999px;
+    border: 1px solid #cfe0f3;
+    background: #f7fbff;
     color: #2a7ae2;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 14px;
+    line-height: 1;
+    transition: all 0.2s ease;
   }
   .person-links a:hover {
-    text-decoration: underline;
+    background: #2a7ae2;
+    border-color: #2a7ae2;
+    color: #ffffff;
+    text-decoration: none;
+    transform: translateY(-1px);
   }
   
   /* ================================================= */
